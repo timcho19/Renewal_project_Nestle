@@ -1,0 +1,30 @@
+
+
+/*variants*/
+:root{
+  --container:1200px;
+  --fz:16px;
+  --lh:24px;
+  
+}
+
+
+/*layout*/
+.container{
+  width:var(--container);
+  margin: 0 auto;
+}
+/*typography*/
+body{
+  /* font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px; */
+ 
+}
+
+/*link button*/
+
+
+/*fonts*/
+
