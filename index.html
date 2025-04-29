@@ -4,22 +4,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nestle</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <!-- 헤더영역 시작 원석 -->
+  <!-- 헤더영역 ws -->
   <header>
-    <nav>
-      <div class="container">
-
-      </div>
-   </nav>
+      <nav class="container">
+        <h1><a href="">Nestle</a></h1>
+        <div class="top_menu">
+          <ul>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">제품</a></li>
+            <li><a href="#">지속가능경영</a></li>
+            <li><a href="#">소식</a></li>
+            <li><a href="#">고객지원</a></li>
+          </ul>
+        </div>
+        <form action="" class="search">
+          <input type="text" placeholder="">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+      </nav>
   </header>
-   <!-- 헤더영역 끝 -->
+   <!-- //헤더영역 -->
 
-  <!-- 슬라이드섹션 시작 원석 -->
-  <section class="main_slide"></section>
-  <!-- 슬라이드섹션 끝 -->
+  <!-- 슬라이드섹션 ws -->
+  <section class="main_slide">
+    <div class="mainslide-wrapper">
+      <ul>
+          <li class="m_slide1 active">
+              <div class="contents">
+                  <h2>Slide 01</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#"></a>
+              </div>
+          </li>
+          <li class="m_slide2">
+              <div class="contents">
+                  <h2>Slide 02 title</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#"></a>
+              </div>
+          </li>
+          <li class="m_slide3">
+              <div class="contents">
+                  <h2>Slide 03 title</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#"></a>
+              </div>
+          </li>
+          <li class="m_slide4">
+              <div class="contents">
+                  <h2>Slide 04 title</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                  <a href="#"></a>
+              </div>
+          </li>
+      </ul>
+    
+      <a href="#" id="prev" class="controls">prev</a>
+      <a href="#" id="next" class="controls">next</i></a>
+
+      <div class="slide_gagebar">
+        <div class="mini_btns">
+          <button class="slider-prev" aria-label="이전 슬라이드">&lt;</button>
+          <span class="slider-count">
+          <span class="current-slide">01</span> &#46; <span class="total-slide">04</span>
+          </span>
+          <button class="slider-next" aria-label="다음 슬라이드">&gt;</button>
+        </div>
+        <div class="slide_gage"></div>
+      </div> <!-- 이 부분 잘 모르겠습니다 ㅠㅠ -->
+
+
+      
+    </div> <!-- //slide_wrap -->
+  </section>  <!-- //슬라이드섹션 -->
 
    <!-- 회사소개섹션 시작 연미 -->
    <section class="company container">
@@ -45,9 +106,99 @@
   </section>
   <!-- //회사소개섹션 -->
 
-  <!-- 뉴스섹선 시작 아랑 -->
-  <section class="news container"></section>
-  <!-- 뉴스섹선 끝 -->
+  <!-- 뉴스섹선 ar -->
+  <section class="news container">
+    <div class="news_bigtitle">
+      <h2>Nestle 소식</h2>
+      <div class="news_nav">
+        <ul>
+          <li><a href="#">전체</a></li>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">뉴스/이벤트</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      <div class="news_list">
+        <ul>
+          <li class="event">
+            <img src="" alt="">
+            <div>
+              <h3>Nestle와 함께하는 커피 시음회</h3>
+              <p>네스프레소 버츄오와 함께하는 캡슐 커피 시음회, 다양한 맛을 느껴보세요!</p>
+            </div>
+          </li>
+          <li class="event">
+            <img src="" alt="">
+            <div>
+              <h3>핑크빛 봄을 담은 킷캣</h3>
+              <p>봄을 맞이하여 다시 찾아온 벚꽃 리미티드 에디션 킷캣!</p>
+            </div>
+          </li>
+          <li class="event">
+            <img src="images/article_img3.png" alt="">
+            <div>
+              <h3>제 1회 어린이 그림 공모전</h3>
+              <p>5월 어린이날을 맞이하여 개최되는 첫번째 그림 공모전</p>
+            </div>
+          </li>
+          <!--
+          <li class="notice">
+            <img src="" alt="">
+            <div>
+              <h3>Nestle 서포터즈 2기 최종 합격자 발표</h3>
+            </div>
+          </li>
+          <li class="notice">
+            <img src="" alt="">
+            <div>
+              <h3>식품 안전의 날</h3>
+              <p>식품의약품안전처에서 주최하는 행사에서 다양한 이벤트를 확인해보세요.</p>
+            </div>
+          </li>
+          <li class="notice">
+            <img src="" alt="">
+            <div>
+              <h3>개인정보처리방침 개정 안내</h3>
+            </div>
+          </li>
+          <li class="event">
+            <img src="" alt="">
+            <div>
+              <h3>Nestle와 함께하는 커피 시음회</h3>
+              <p>네스프레소 버츄오와 함께하는 캡슐 커피 시음회, 다양한 맛을 느껴보세요!</p>
+            </div>
+          </li>
+          <li class="event">
+            <img src="" alt="">
+            <div>
+              <h3>핑크빛 봄을 담은 킷캣</h3>
+              <p>봄을 맞이하여 다시 찾아온 벚꽃 리미티드 에디션 킷캣!</p>
+            </div>
+          </li>
+          <li class="event">
+            <img src="" alt="">
+            <div>
+              <h3>제 1회 어린이 그림 공모전</h3>
+              <p>5월 어린이날을 맞이하여 개최되는 첫번째 그림 공모전</p>
+            </div>
+          </li>
+          -->
+        </ul>
+        <div class="article_btn">
+          <a href="#">더보기</a>
+        </div>
+      </div>
+      <div class="news_video">
+        <h2>Nestle의 다양한 이야기가 궁금하다면?</h2>
+        <div>
+          <a href=""><img src="" alt="">Youtube 보러가기</a>
+        </div>
+        <video url="https://www.youtube.com/watch?v=8q3agjm8wtA&t=184s"></video>
+      </div>
+    </div>
+  </section>
+  <!-- //뉴스섹선 -->
 
    <!-- 제품소개 섹션 시작 연미 -->
    <section class="products container">
@@ -88,23 +239,91 @@
 
   <!-- //제품소개 섹션 -->
 
-  <!-- 브랜드 섹션 시작 경선 -->
+  <!-- 브랜드 섹션 gs -->
   <section class="brands">
-    <div class="container"></div>
+      <h2>Explore selection our brands</h2>
+    <ul>
+      <li><a href="#"><img src="images/brand_logo1.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo2.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo3.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo4.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo5.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo6.png" alt=""></a></li>
+      <li><a href="#"><img src="images/brand_logo7.png" alt=""></a></li>
+    </ul>
   </section>
-  <!-- 브랜드 섹션 끝 -->
+  <!-- //브랜드섹션 -->
 
 
-  <!-- 고객지원 섹션 시작 경선 -->
-  <section class="support container"></section>
-  <!-- 고객지원 섹션 끝 -->
+  <!-- 고객지원 섹션 gs -->
+  <section class="support container">
+    <h2>Customer Support</h2>
+    <nav>
+      <ul>
+        <li><a href="#"><img src="images/section_support_icon1.png" alt=""></a></li>
+        <li><a href="#"><img src="images/section_support_icon2.png" alt=""></a></li>
+        <li><a href="#"><img src="images/section_support_icon3.png" alt=""></a></li>
+        <li><a href="#"><img src="images/section_support_icon4.png" alt=""></a></li>
+      </ul>
+    </nav>
+  </section>
+  <!-- //고객지원 섹션 -->
 
-  <!-- 푸터영역 시작 원석 -->
+  <!-- 푸터영역 ws -->
   <footer>
-    <div class="container"></div>
+    <div class="container">
+      <div class="footer_title">
+        <h3>Nestle</h3>
+        <p>we unlock the power of
+          food to enhance quality of
+          life for everyoune, today and
+          for generations to come</p>
+      </div>
+      <nav>
+        <div class="footer_menu">
+          <dl class="footer_menu1">
+            <dt><a href="#">네슬레 소개</a></dt>
+            <dd><a href="#">네슬레 코리아</a></dd>
+            <dd><a href="#">Nestle for Healthier Kids</a></dd>
+            <dd><a href="#">네슬레 150년</a></dd>
+          </dl>
+          <dl class="footer_menu2">
+            <dt><a href="#">채용 정보</a></dt>
+            <dd><a href="#">채용 공고</a></dd>
+            <dd><a href="#">다양성,형평성 및 포용성</a></dd>
+            <dd><a href="#">채용 FAQ</a></dd>
+          </dl>
+          <dl class="footer_menu3">
+            <dt><a href="#">미디어</a></dt>
+            <dd><a href="#">보도자료</a></dd>
+            <dd><a href="#">글로벌 뉴스</a></dd>
+          </dl>
+          <dl class="footer_menu4">
+            <dt><a href="#">share information</a></dt>
+            <dd><a href="#">Share Price</a></dd>
+          </dl>
+          <ul class="caption_title">
+            <li><a href="#" >개인정보처리방침</a></li>
+            <li><a href="#" >이용약관</a></li>
+            <li><a href="#" >탄소효율성</a></li>
+          </ul>
+        </div> 
+        <div class="sns_list">
+          <p>FOLLOW US ON</p>
+          <ul class="sns_icon">
+            <li><a href="#"><img src="images/footer_sns_icon1.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer_sns_icon2.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer_sns_icon3.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer_sns_icon4.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/footer_sns_icon5.svg" alt=""></a></li>
+          </ul>
+        </div>
+    </nav>
+    </div>
   </footer>
+   <!-- //푸터영역 -->
 
-
+  <a href="#" id="top"><img src="images/footer_top_icon1.svg" alt=""></a>
   
 </body>
 </html>
