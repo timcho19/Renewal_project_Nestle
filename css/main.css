@@ -1,6 +1,31 @@
 @import url('reset.css');
 @import url('common.css');
 
+
+/* 뉴스 섹션 ar */
+.news_bigtitle{
+  display: flex;
+  margin-bottom: 48px;/*common 변수로*/
+}
+.news_bigtitle .news_nav ul{
+  display: flex;
+}
+.news_bigtitle h2{
+  font-size: 48px; /*common 변수로*/
+  line-height: 48px;
+  font-weight: bold;
+  margin-right: 40px;
+}/*MainTT*/
+.news_bigtitle .news_nav ul li{
+  border: 1px solid #212121;/*common 변수로*/
+  border-radius: 40px;
+  width:90px;
+  text-align: center;
+  padding: 11px 0; /*폰트 적용 후 ... 보자!*/
+  /*padding: 11px 20px; padding으로 동일하게 줄경우, 크기가 달라져서 안예쁨 일단 고민 중*/
+  margin-right: 14px;
+}
+
 /* section_brans_gs */
 .brands{
   margin-bottom:120px;
