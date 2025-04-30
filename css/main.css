@@ -2,3 +2,14 @@
 @import url('common.css');
 
 
+
+/* company ym*/
+.company{
+	margin-bottom: 112px;
+}
+.company .info{
+	display: flex;
+}
+.company .info:nth-child(2){
+	margin-top: 96px;
+}
