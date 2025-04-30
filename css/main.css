@@ -41,9 +41,6 @@
 }
 /* /section_brans_gs */
 /* section_support_gs */
-.support{
-  margin-bottom:120px;
-}
 .support h2{
   margin-bottom:96px;
   text-align:center;
@@ -71,65 +68,36 @@
 
 /* footer_gs */
 footer{
+  width: 100%;
+  box-sizing:border-box;
   background:#FE5A15;
-  font-size:12px;
 }
-footer .footer_all{
+.footer_all{
   color:#fff;
   padding:48px 360px;
-  display:flex;
-  gap: 174px;
+  box-sizing: border-box;
 }
-footer .footer_title{
+.footer_title{
   display:flex;
 }
-footer .footer_title2{
+.footer_title2{
   display:flex;
   flex-direction: column;
-  gap:24px;
 }
-footer .footer_title h3{
+.footer_title h3{
   color:#371909;
-  font-size:36px;
 }
-footer .footer_title p{
-  font-size:16px;
+.footer_title p{
   width: 213px;
 }
 footer nav{
  display:flex;
- justify-content: space-between;
- flex-direction: column;
-}
-footer .footer_menu{
-  text-align:center;
-  display:flex;
-  gap:46px;
-}
-footer .footer_menu dt{
-  color:#371909;
-  font-size:14px;
-}
-footer .footer_menu ul{
-  color:#371909;
-  font-size:14px;
-}
-footer .footer_menu ul li:first-child{
-  color:#193CEA;
 }
 footer nav .sns_list{
   display:flex;
-  justify-content: right;
-  gap:20px;
 }
-footer nav .sns_list p{
-  font-size:14px;
-  color:#371909;
-}
-footer nav .sns_list .sns_icon{
+.footer nav .sns_list ul{
   display:flex;
-  flex-direction: row;
-  gap:14px;
 }
 /* footer_gs */
 
@@ -141,10 +109,6 @@ footer nav .sns_list .sns_icon{
   left:80%;
   top:80%;
 }
-#top:hover{
-  background: no-repeat url(../images/footer_top_hover.svg);
-}
-/* /top_button_gs */
 /* 헤더섹션 ws */
 header{
   box-shadow: 0 2px 3px rgba(0,0,0,0.1);
