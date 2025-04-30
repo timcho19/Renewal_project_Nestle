@@ -2,3 +2,103 @@
 @import url('common.css');
 
 
+/* 헤더섹션 ws */
+header{
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+  padding: 24px 0;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+header nav ul{
+  display: flex;
+  gap: 47px;
+}
+
+header nav ul li ul{
+  display: none;
+}
+
+header nav h1 a{
+ display: block;
+ width: 71px;
+ height: 74px;
+ background: url(../images/header_logo.png) no-repeat;
+ background-size: cover;
+ text-indent: -999999em;
+ overflow: hidden;
+
+}
+
+header nav form{
+  width:230px;
+  height: 40px;
+  border-radius:40px;
+  border:1px solid  #9E9E9E ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+header nav form input{
+  border: none;
+  margin-left: 10px;
+}
+
+
+
+header nav form button{
+  margin-right: 20px;
+  font-size: 25px;
+  color: #9E9E9E;
+}
+
+
+
+/* //헤더섹션 */
+
+/* 슬라이드섹션ws */
+.main_slide{
+  width: 100%;
+  margin-bottom: 120px;
+}
+.mainslide-wrapper{
+  width: 100%;
+  height: 720px;
+}
+
+
+.main_slide .mainslide-wrapper ul{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main_slide .mainslide-wrapper ul li{
+  display: flex;
+  justify-content:left;
+  align-items: center;
+  position: absolute;
+  top:0%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.main_slide .mainslide-wrapper ul li.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.m_slide1{
+  background: url(../images/main_slide1.png);
+}
+
+
+/* //슬라이드섹션 */
