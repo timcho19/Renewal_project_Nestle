@@ -1,4 +1,8 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+font-family: "Noto Sans", sans-serif;
+font-family: "Noto Sans KR", sans-serif;
+*/
 
 /*variants*/
 :root{
@@ -17,8 +21,54 @@
   margin: 0 auto;
 }
 /*typography*/
-
-
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  /* font: 400 var(--fz)/var(--lh) "Noto Sans KR"; */
+}
+.main-tt{
+  text-align: center;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #212121;
+}
+.section-tt36{
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #212121;
+}
+.section-tt28{
+  text-align: center;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 24px;
+}
+.menu-title{
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212121;
+}
+.card-title{
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+.caption{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+}
 /*link button*/
 
 
