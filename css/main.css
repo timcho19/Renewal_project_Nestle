@@ -1,2 +1,86 @@
 @import url('reset.css');
 @import url('common.css');
+
+/* section_brans_gs */
+.brands{
+  margin-bottom:120px;
+}
+.brands h2{
+  text-align:center;
+  margin-bottom:96px;
+}
+.brands ul{
+  display:flex;
+  justify-content: space-between;
+}
+/* /section_brans_gs */
+/* section_support_gs */
+.support h2{
+  margin-bottom:96px;
+  text-align:center;
+}
+.support ul{
+  display:flex;
+  justify-content:space-between;
+}
+.support ul li a{
+  width: 160px;
+  height:160px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  border:1px solid rgba(0,0,0,0.5);
+  border-radius:50%;
+  margin-bottom:24px;
+}
+.support ul li h3{
+  margin:0;
+  text-align:center;
+}
+/* /section_support_gs */
+
+
+/* footer_gs */
+footer{
+  width: 100%;
+  box-sizing:border-box;
+  background:#FE5A15;
+}
+.footer_all{
+  color:#fff;
+  padding:48px 360px;
+  box-sizing: border-box;
+}
+.footer_title{
+  display:flex;
+}
+.footer_title2{
+  display:flex;
+  flex-direction: column;
+}
+.footer_title h3{
+  color:#371909;
+}
+.footer_title p{
+  width: 213px;
+}
+footer nav{
+ display:flex;
+}
+footer nav .sns_list{
+  display:flex;
+}
+.footer nav .sns_list ul{
+  display:flex;
+}
+/* footer_gs */
+
+
+
+/* top_button_gs*/
+#top{
+  position:fixed;
+  left:80%;
+  top:80%;
+}
+/* /top_button_gs */
