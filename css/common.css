@@ -19,8 +19,60 @@ font-family: "Noto Sans KR", sans-serif;
   margin: 0 auto;
 }
 /*typography*/
-
-
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #212121;
+  /* font: 400 var(--fz)/var(--lh) "Noto Sans KR"; */
+}
+.main-tt{
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #212121;
+}
+.section-tt36{
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  color: #212121;
+}
+.section-tt28{
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 24px;
+}
+.menu-title{
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212121;
+}
+.card-title{
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #212121;
+}
+.caption{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+}
 /*link button*/
 
 
