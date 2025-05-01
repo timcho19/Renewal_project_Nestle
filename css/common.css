@@ -72,7 +72,11 @@ body{
   font-size:calc(var(--fz) * 0.75);
   font-weight: 400;
 }
-
+.caption-title{
+  font: var(--lh);
+  font-size:calc(var(--fz) * 0.875);
+  font-weight: 400;
+}
 
 /*link button*/
 .btn_large,.btn_medium,.btn_small{
