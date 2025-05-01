@@ -160,11 +160,46 @@ header nav ul{
   gap: 47px;
 }
 
-header nav ul li ul{
-  display: none;
-  position: absolute;
-  background-color: #FE5A15;
+header nav>ul>li:hover>a{
+  color: #FE5A15;
+  font-weight: bold;
 }
+header nav ul li{
+  position: relative;
+
+}
+header nav ul li ul{
+  position: absolute;
+  visibility: hidden;
+  top:39px;
+  transform: translateX(-50%);
+  left: 50%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 162px;
+  gap:17px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #FE5A15;
+  z-index: 999;
+  transition: opacity 0.3s;
+
+}
+header nav ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  
+}
+
+header nav ul li ul li{
+  color: var(--white);
+}
+
+
+
 
 header nav h1 a{
  display: block;
@@ -188,7 +223,7 @@ header nav form input{
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 0 50px;
+  padding: 0 50px 0 20px;
   border-radius:40px;
   border:1px solid  #9E9E9E ;
   margin-left: 10px;
