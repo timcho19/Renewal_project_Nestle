@@ -367,7 +367,24 @@ header nav form button{
   /* background-color: rgba(0,0,0,0.2); */
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:48px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.main_slide .mainslide-wrapper ul li .contents h2,
+.main_slide .mainslide-wrapper ul li .contents p{
   
+}
+.main_slide .mainslide-wrapper ul li .contents a{
+  background: none;
+  font-weight: bold;
+  border-color:var(--white);
+  /* border: 2px; */
+  color: var(--white);
+
 }
 
 .m_slide1{
@@ -391,7 +408,7 @@ header nav form button{
   position: absolute;
   top: 50%;
   transform: translateY(50%);
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 
