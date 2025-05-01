@@ -177,26 +177,34 @@ header nav h1 a{
 
 header nav form{
   width:230px;
-  height: 40px;
-  border-radius:40px;
-  border:1px solid  #9E9E9E ;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box;
+  height:40px;
+  position: relative;
+
 }
 
 header nav form input{
-  border: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 50px;
+  border-radius:40px;
+  border:1px solid  #9E9E9E ;
   margin-left: 10px;
+  transition: 0.3s;
+}
+
+header nav form input:focus{
+  outline: none;
+  border: 1px solid #FE5A15; 
 }
 
 
-
 header nav form button{
-  margin-right: 20px;
+  position:absolute;
   font-size: 25px;
   color: #9E9E9E;
+  top:calc(50% - 12.5px);
+  right:9px;
 }
 
 
@@ -242,6 +250,18 @@ header nav form button{
 .m_slide1{
   background: url(../images/main_slide1.png);
 }
+
+.mainslide-wrapper{
+  position: relative;
+}
+
+.mainslide-wrapper #prev{
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translateY(-50%);
+}
+
 
 
 /* //슬라이드섹션 */
