@@ -76,6 +76,7 @@ footer{
 }
 footer .footer_all{
   color:var(--white);
+  line-height:var(--lh);
   display:flex;
   justify-content: space-between;
   padding:48px 0;
@@ -91,10 +92,12 @@ footer .footer_title2{
 footer .footer_title h3{
   color:#f8af6a;
   font-size:36px;
+  font-weight:bold;
 }
 footer .footer_title p{
   font-size:16px;
   width: 213px;
+  font-size:calc(var(--fz) * 0.75);
 }
 footer nav{
  display:flex;
