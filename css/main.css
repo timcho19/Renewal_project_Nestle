@@ -366,6 +366,7 @@ header nav form button{
 .main_slide .mainslide-wrapper ul li .contents{
   /* background-color: rgba(0,0,0,0.2); */
   color: #fff;
+  text-align: center;
   
 }
 
@@ -389,15 +390,18 @@ header nav form button{
 .main_slide_btns{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(50%);
+  opacity: 0.5;
 }
 
 
 .mainslide-wrapper #prev{
-  left: 35px;
+  left: 50%;
+  margin-left: -750px;
 }
 .mainslide-wrapper #next{
-  right: 35px;
+  right: 50%;
+  margin-right: -750px;
 }
 
 .slide_gagebar{
