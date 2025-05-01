@@ -155,19 +155,23 @@ header nav{
   justify-content: space-between;
   align-items: center;
 } 
-header nav ul{
+header nav>ul{
   display: flex;
   gap: 47px;
 }
+
 
 header nav>ul>li:hover>a{
   color: #FE5A15;
   font-weight: bold;
 }
-header nav ul li{
+header nav ul .m_menu{
   position: relative;
-
+  height: 100%;
+  line-height: 40px;
+  
 }
+
 header nav ul li ul{
   position: absolute;
   visibility: hidden;
@@ -196,6 +200,10 @@ header nav ul li:hover ul{
 
 header nav ul li ul li{
   color: var(--white);
+  line-height: 24px;
+}
+header nav ul li ul li:hover{
+  font-weight: bold;
 }
 
 
