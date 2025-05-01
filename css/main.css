@@ -161,7 +161,7 @@ header nav ul{
 }
 
 header nav ul li ul{
-  display: block;
+  display: none;
   position: absolute;
   background-color: #FE5A15;
 }
@@ -257,12 +257,51 @@ header nav form button{
   position: relative;
 }
 
-.mainslide-wrapper #prev{
+.main_slide_btns{
   position: absolute;
   top: 50%;
-  left: 35px;
   transform: translateY(-50%);
 }
+
+
+.mainslide-wrapper #prev{
+  left: 35px;
+}
+.mainslide-wrapper #next{
+  right: 35px;
+}
+
+.slide_gagebar{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width:75%;
+}
+.slide_gagebar .status{
+  color: var(--white);
+  font-weight: bold;
+  line-height: 24px;
+}
+.slide_gagebar .progresss-bar{
+  width: 92%;
+  height: 4px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  position: relative;
+}
+.slide_gagebar .progresss-bar .bar{
+  width:30%;
+  height: 100%; 
+  position: absolute;
+  left: 0;
+  background-color: var(--white);
+}
+
+
 
 
 
