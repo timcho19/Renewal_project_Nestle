@@ -374,10 +374,7 @@ header nav form button{
   gap:48px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
-.main_slide .mainslide-wrapper ul li .contents h2,
-.main_slide .mainslide-wrapper ul li .contents p{
-  
-}
+
 .main_slide .mainslide-wrapper ul li .contents a{
   background: none;
   font-weight: bold;
