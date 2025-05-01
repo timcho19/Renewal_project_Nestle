@@ -78,7 +78,6 @@ footer .footer_all{
   color:var(--white);
   display:flex;
   justify-content: space-between;
-  
   padding:48px 0;
 }
 footer .footer_title{
