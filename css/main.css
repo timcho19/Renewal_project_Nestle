@@ -188,7 +188,7 @@ header nav ul li ul{
   box-sizing: border-box;
   border-radius: 20px;
   background-color: #FE5A15;
-  z-index: 999;
+  z-index: 99;
   transition: opacity 0.3s;
 
 }
@@ -292,8 +292,23 @@ header nav form button{
   visibility: visible;
 }
 
+.main_slide .mainslide-wrapper ul li .contents{
+  /* background-color: rgba(0,0,0,0.2); */
+  color: #fff;
+  
+}
+
 .m_slide1{
   background: url(../images/main_slide1.png);
+}
+.m_slide2{
+  background: url(../images/main_slide2.png);
+}
+.m_slide3{
+  background: url(../images/main_slide3.png);
+}
+.m_slide4{
+  background: url(../images/main_slide4.png);
 }
 
 .mainslide-wrapper{
