@@ -79,6 +79,7 @@ body{
   background: #fff;
   color: var(--black);
   font-weight: 400;
+  display: inline-block;
 }
 .btn_large{
   border-radius:30px;
