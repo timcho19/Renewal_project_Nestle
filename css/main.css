@@ -77,7 +77,8 @@ footer{
 footer .footer_all{
   color:var(--white);
   display:flex;
-  gap: 174px;
+  justify-content: space-between;
+  
   padding:48px 0;
 }
 footer .footer_title{
@@ -119,6 +120,7 @@ footer .footer_menu ul li:first-child{
 footer nav .sns_list{
   display:flex;
   justify-content: right;
+  align-items:center;
   gap:20px;
 }
 footer nav .sns_list p{
@@ -127,26 +129,56 @@ footer nav .sns_list p{
 }
 footer nav .sns_list .sns_icon{
   display:flex;
-  flex-direction: row;
+
+  align-items:center;
   gap:14px;
+}
+
+footer nav .sns_list .sns_icon li a{
+  width:33px;
+  height:33px;
+  display: block;
 }
 /* footer_gs */
 /* footer hover */
-footer nav .sns_list .sns_icon li:hover:first-child img {
-  content:url(../images/footer_sns_hover_icon1.svg);
+footer nav .sns_list .sns_icon li:hover:first-child svg path{
+  fill:rgba(24,199,242,0.8);
 }
-footer nav .sns_list .sns_icon li:hover:nth-child(2) img {
-  content:url(../images/footer_sns_hover_icon2.svg);
+footer nav .sns_list .sns_icon li:hover:first-child svg rect{
+  stroke:rgba(24,199,242,0.8);
 }
-footer nav .sns_list .sns_icon li:hover:nth-child(3) img {
-  content:url(../images/footer_sns_hover_icon3.svg);
+footer nav .sns_list .sns_icon li:hover:nth-child(2) svg path{
+  fill:rgba(230,33,23,0.8);
 }
-footer nav .sns_list .sns_icon li:hover:nth-child(4) img {
-  content:url(../images/footer_sns_hover_icon4.svg);
+footer nav .sns_list .sns_icon li:hover:nth-child(2) svg rect{
+  stroke:rgba(230,33,23,0.8);
 }
-footer nav .sns_list .sns_icon li:hover:last-child img {
-  content:url(../images/footer_sns_hover_icon5.svg);
+
+footer nav .sns_list .sns_icon li:nth-child(3) img{
+  display: none;
 }
+footer nav .sns_list .sns_icon li:nth-child(3) img.active{
+  display: block;
+}
+footer nav .sns_list .sns_icon li:nth-child(3):hover img{
+  display: block;
+}
+footer nav .sns_list .sns_icon li:nth-child(3):hover img.active{
+  display: none;
+}
+footer nav .sns_list .sns_icon li:hover:nth-child(4) svg path{
+  fill:rgba(0,0,0,0.8);
+}
+footer nav .sns_list .sns_icon li:hover:nth-child(4) svg rect{
+  stroke:rgba(0,0,0,0.8);
+}
+footer nav .sns_list .sns_icon li:hover:last-child svg path{
+  fill:rgba(10,102,194,0.8);
+}
+footer nav .sns_list .sns_icon li:hover:last-child svg rect{
+  stroke:rgba(10,102,194,0.8);
+}
+
 /* /footer hover */
 
 
