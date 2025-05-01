@@ -32,49 +32,67 @@ body{
   font-size: 16px;
   line-height: 24px;
    */
-   font: 400 var(--fz)/var(--lh) "Noto Sans KR";
+   font: 400 var(--lh) "Noto Sans KR", sans-serif;
+    font-size: var(--fz);
    color: var(--black);
 }
 .main-tt{
   text-align: center;
-  font: bold calc(var(--base-fz) * 3)/calc(var(--lh) * 2);
+  font: bold calc(var(--lh) * 2);
+  font-size: calc(var(--fz) * 3);
 }
 .section-tt36{
   text-align: center;
-  font: bold calc(var(--base-fz) * 2.25)/calc(var(--lh) * 2);
+  font: bold calc(var(--lh) * 2);
+  font-size: calc(var(--fz) * 2.25);
 }
 .section-tt28{
   text-align: center;
-  font: 500 calc(var(--base-fz) * 1.75)/var(--lh);
+  font: 500 var(--lh);
+  font-size: calc(var(--fz) * 1.75);
 }
 .menu-title{
   text-align: center;
-  font: 400 calc(var(--base-fz) * 1.125)/var(--lh);
+  font: 400 var(--lh);
+  font-size: calc(var(--fz) * 1.125);
 }
 .card-title{
   text-align: center;
-  font: 500 calc(var(--base-fz) * 1.25)/var(--lh);
+  font: 500 var(--lh);
+  font-size: calc(var(--fz) * 1.25);
 }
 .caption{
-  font: 400 calc(var(--base-fz) * 0.75)/var(--lh);
+  font: 400 var(--lh);
+  font-size:calc(var(--fz) * 0.75);
 }
 /*link button*/
-.btn{
-  /* border: 1px solid var(--black);
-  border-radius:30px;
-  padding: 0 32px;
-  line-height:calc(var(--lh) * 2.5);
+/* button{
+  border-radius:24px;
+  border: 1px solid var(--black);
+  line-height:calc(var(--lh) * 2);
+  padding: 0 66px;
   background: #fff;
-  color: var(--dark-black);  
+  color: var(--black);  
   display: inline-block;
+  font: bold 16px;
 }
-.btn:focus{
+button:hover,button:active{
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  color: var(--white);  
+}
+
+button.btn_large{
   border-radius:30px;
-  padding: 0 32px;
   line-height:calc(var(--lh) * 2.5);
-  background: #fff;
-  color: var(--dark-black);  
-  display: inline-block;
-} */
-/*fonts*/
+  font: bold 20px;
 }
+button.btn_medium{
+  font: bold 16px;
+} 
+button.btn_small{
+  padding: 0 32px;
+  border-radius:20px;
+  line-height:calc(var(--lh) * 1.625);
+  font: bold 16px;
+}  */
