@@ -68,7 +68,9 @@ header nav ul{
 }
 
 header nav ul li ul{
-  display: none;
+  display: block;
+  position: absolute;
+  background-color: #FE5A15;
 }
 
 header nav h1 a{
