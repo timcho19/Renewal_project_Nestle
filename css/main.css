@@ -487,11 +487,12 @@ header nav form button{
   position: relative;
 }
 .slide_gagebar .progresss-bar .bar{
-  width:30%;
+  
   height: 100%; 
   position: absolute;
   left: 0;
   background-color: var(--white);
+  transition: 4s;
 }
 /* //슬라이드섹션 */
 

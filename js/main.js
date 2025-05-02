@@ -28,12 +28,16 @@ const m_slidesCount = m_slides.length;
 const slideWrapper =document.querySelector('.mainslide-wrapper');
 const slideGageBar = document.querySelector('.slide_gagebar');
 const currentCount = document.querySelector('.slide_gagebar .current-slide');
-let statusCount = 1;
+const progressBar = slideGageBar.querySelector('.bar');
 let m_currentIdx = 0;
 
-let autofade;
+let autoFade;
+const slideDuration = 4000;
+
+
 function autoFadeSlide(){
-   autoFade = setInterval(function(){
+
+    autoFade = setInterval(function(){
 
         let nextIdx = (m_currentIdx + 1) % m_slidesCount;
 
@@ -41,9 +45,11 @@ function autoFadeSlide(){
         m_slides[nextIdx].classList.add('active');
         m_currentIdx = nextIdx;
 
+        
         currentCount.innerHTML = '0'+(m_currentIdx+1);
+        
 
-    },4000);
+    },slideDuration);
 
 }
 
@@ -51,10 +57,11 @@ autoFadeSlide();
 
 //slidewrapper에 마우스 올렸을때 stop
 
-slideWrapper.addEventListener('mouserover',()=>{
- clearInterval(autofade);
+slideWrapper.addEventListener('mouseover',()=>{
+ clearInterval(autoFade);
 });
-slideWrapper.addEventListener('mouserleave',()=>{
+
+slideWrapper.addEventListener('mouseleave',()=>{
     autoFadeSlide();
 });
 
