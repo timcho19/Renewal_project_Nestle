@@ -33,7 +33,8 @@ body{
   line-height: 24px;
   color: #212121;
    */
-   font: 400 var(--fz)/var(--lh) "Noto Sans KR", sans-serif;
+   font: 400 var(--lh) "Noto Sans KR", sans-serif;
+    font-size: var(--fz);
    color: var(--black);
 }
 .main-tt{
@@ -71,7 +72,11 @@ body{
   font-size:calc(var(--fz) * 0.75);
   font-weight: 400;
 }
-
+.caption-title{
+  font: var(--lh);
+  font-size:calc(var(--fz) * 0.875);
+  font-weight: 400;
+}
 
 /*link button*/
 .btn_large,.btn_medium,.btn_small{
