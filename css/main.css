@@ -155,9 +155,7 @@ header nav form button{
 
 /* //슬라이드섹션 */
 
-
 /* company ym */
-.company.info{
+.company .info{
   display: flex;
-  align-items: center;
 }
