@@ -554,3 +554,50 @@ header nav form button{
 .company .info .content p:nth-child(2){
   width:395px;
 }
+/* //company ym */
+
+/* 제품소개 섹션 시작 ym */
+.products .sliderwrapper{
+  overflow: hidden;
+}
+.products .sliderwrapper .slidecontainer{
+  display: flex;
+  gap: 50px;
+  width: 1430px;
+}
+.products h2{
+  text-align-last: left;
+  margin-bottom: 27px;
+}
+.products h3{
+  margin-bottom: 24px;
+}
+.products h5{
+  margin-bottom: 4px;
+}
+.products p{
+ text-align: left;
+ color: var(--medium-gray);
+ margin-bottom: 95px;
+}
+.products .sliderwrapper .slidecontainer li img{
+  border-radius: 15px;
+}
+.products .sliderwrapper .slidecontainer li.active{
+  flex: 1.4375;
+  height: 420px;
+}
+/*
+.products .sliderwrapper-wrap button{
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.sliderwrapper-wrap .prev{
+  left: -40px;
+}
+.sliderwrapper-wrap .next{
+  right: -40px;
+}
+*/
