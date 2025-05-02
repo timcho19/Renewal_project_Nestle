@@ -17,7 +17,7 @@
   font-weight: bold;
   margin-right: 40px;
 }/*MainTT*/
-.news_bigtitle .news_nav ul li{
+.news_bigtitle .news_nav button{
   border: 1px solid #212121; /* common 변수로 */
   border-radius: 40px;
   width:90px;
@@ -25,6 +25,22 @@
   padding: 11px 0; /* 폰트 적용 후 ... 보자! */
   /*padding: 11px 20px; padding으로 동일하게 줄경우, 크기가 달라져서 안예쁨 일단 고민 중*/
   margin-right: 14px;
+}
+.content{
+  display: flex;
+}
+.content .news_list ul li{
+  display: flex;
+}
+.content .news_video h2{
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 60px;
+
+}
+.content .video video{
+  width: 565px;
+  height: 309px;
 }
 
 /* section_brans_gs */
