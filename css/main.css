@@ -54,11 +54,14 @@
 }
 .brands ul{
   display:flex;
-  justify-content: space-between;
-
+  gap:124px;
+  position: relative;
+  left:0;
 }
 .brands ul li a{
-
+  width:168px;
+  height: 168px;
+  display: block;
 }
 .brands ul li img{
   width: 100%;
