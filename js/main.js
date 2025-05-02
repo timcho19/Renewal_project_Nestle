@@ -80,9 +80,7 @@ const slideDuration = 4000;
 
 
 function autoFadeSlide(){
-
     autoFade = setInterval(function(){
-
         let nextIdx = (m_currentIdx + 1) % m_slidesCount;
 
         m_slides[m_currentIdx].classList.remove('active');
