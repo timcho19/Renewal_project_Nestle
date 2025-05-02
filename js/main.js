@@ -47,20 +47,18 @@ slid.addEventListener('mouseleave',()=>{
 
 window.addEventListener('scroll',()=>{
     let scrollAmt = window.scrollY;
-    if(scrollAmt > brandsOffsetTop){
+        if(scrollAmt > brandsOffsetTop){
+            topBnt.classList.add('btn');
+        }else{
+            topBnt.classList.remove('btn');
+        };
+    })
     
-    if(scrollAmt > topBntoffset){
-        topBnt.classList.add('btn');
-    }else{
-        topBnt.classList.remove('btn');
-    }
-}
-})
 topBnt.addEventListener('click',(e)=>{
     e.preventDefault();
     window.scrollTo({
         left:0,top:0,behavior:"smooth"
-    })
+    });
 })
 
 // /top button
