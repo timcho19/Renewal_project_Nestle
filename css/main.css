@@ -395,6 +395,7 @@ header nav form button{
   background-size: cover;
   visibility: hidden;
   opacity: 0;
+  transition: 0.5s;
 }
 
 .main_slide .mainslide-wrapper ul li.active{
@@ -420,7 +421,13 @@ header nav form button{
   border-color:var(--white);
   /* border: 2px; */
   color: var(--white);
+  transition: 0.3s;
 
+}
+
+.main_slide .mainslide-wrapper ul li .contents a:hover{
+  background-color: #FE5A15;
+  color: var(--white);
 }
 
 .m_slide1{
