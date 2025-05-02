@@ -54,6 +54,7 @@ window.addEventListener('scroll',()=>{
     }else{
         topBnt.classList.remove('btn');
     }
+}
 })
 topBnt.addEventListener('click',(e)=>{
     e.preventDefault();
