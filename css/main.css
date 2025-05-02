@@ -46,6 +46,7 @@
 /* section_brans_gs */
 .brands{
   margin-bottom:120px;
+  overflow: hidden;
 }
 .brands h2{
   text-align:center;
@@ -54,6 +55,13 @@
 .brands ul{
   display:flex;
   justify-content: space-between;
+
+}
+.brands ul li a{
+
+}
+.brands ul li img{
+  width: 100%;
 }
 /* /section_brans_gs */
 /* section_support_gs */
