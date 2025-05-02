@@ -7,12 +7,14 @@
 .news_bigtitle{
   display: flex;
   margin-bottom: calc(var(--lh) * 2);
+  align-items: end;
 }
 .news_bigtitle .news_nav ul{
   display: flex;
 }
 .news_bigtitle h2{
   margin-right: 40px;
+  line-height: calc(var(--lh) * 2);
 }
 .news_bigtitle .news_nav button{
   border: 1px solid var(--black);
@@ -23,18 +25,33 @@
   /*padding: 11px 20px; padding으로 동일하게 줄경우, 크기가 달라져서 안예쁨 일단 고민 중*/
   margin-right: 14px;
 }
-.content{
+.news .content{
   display: flex;
+  gap: calc(var(--lh) * 2);
+  
+}
+.content .news_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .news_list ul{
+  width: 587px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lh);
+  margin-bottom: calc(var(--lh) * 2);
 }
 .content .news_list ul li{
   display: flex;
   background: #fff;
-  border-radius: 10px;
-  margin-bottom: 24px;
+  border: rgba(158, 158, 158, 0.2) 1px solid;
+  border-radius: 10px 0 0 10px;
+  box-sizing: border-box;
 }
 .content .news_list ul li:hover{
   box-shadow: 
-  0px 1px 3px rgba(0,0,0,0.18);
+  0px 1px 3px rgba(0,0,1,0.18);
 }
 .content .news_list ul li div{
   padding: 12px;
