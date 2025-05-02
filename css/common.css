@@ -62,7 +62,6 @@ body{
   font-weight: 500;
 }
 .card-title{
-  text-align: center;
   font: var(--lh);
   font-size: calc(var(--fz) * 1.25);
   font-weight: 500;
