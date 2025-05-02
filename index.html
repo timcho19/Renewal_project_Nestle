@@ -12,9 +12,8 @@
   <header>
       <nav class="container">
         <h1><a href="">Nestle</a></h1>
-        <div class="top_menu">
-          <ul>
-            <li><a href="#">브랜드</a>
+          <ul class="top_menu">
+            <li class="m_menu"><a href="#">브랜드</a>
               <ul>
                 <li><a href="">전체라인업</a></li>
                 <li><a href="">네스카페</a></li>
@@ -22,7 +21,7 @@
                 <li><a href="">일루마</a></li>
               </ul>
             </li>
-            <li><a href="#">제품</a>
+            <li class="m_menu"><a href="#">제품</a>
               <ul>
                 <li><a href="">커피</a></li>
                 <li><a href="">음료</a></li>
@@ -30,15 +29,15 @@
                 <li><a href="">유아식품</a></li>
               </ul>
             </li>
-            <li><a href="#">지속가능경영</a></li>
-            <li><a href="#">소식</a>
+            <li class="m_menu"><a href="#">지속가능경영</a></li>
+            <li class="m_menu"><a href="#">소식</a>
               <ul>
                 <li><a href="">회사소개</a></li>
                 <li><a href="">네슬레소식</a></li>
                 <li><a href="">채용공고</a></li>
               </ul>
             </li>
-            <li><a href="#">고객지원</a>
+            <li class="m_menu" ><a href="#">고객지원</a>
               <ul>
                 <li><a href="">FAQ</a></li>
                 <li><a href="">문의하기</a></li>
@@ -46,8 +45,7 @@
               </ul>
             </li>
           </ul>
-        </div>
-        <form action="" class="search">
+        <form action="" id="search">
           <input type="text" placeholder="">
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
@@ -60,28 +58,28 @@
     <div class="mainslide-wrapper">
       <ul>
           <li class="m_slide1 active">
-              <div class="contents">
-                  <h2>Slide 01</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                  <a href="#"></a>
+              <div class="contents container">
+                  <h2 class="main-tt">일상을 채우는 다양한 맛</h2>
+                  <p class="section-tt28">네슬레의 다양한 제품을 만나보세요. 당신의 하루를 풍성하게 만들어드립니다.</p>
+                  <a class="btn_large" href="#" >자세히 보기</a>
               </div>
           </li>
           <li class="m_slide2">
-              <div class="contents">
+              <div class="contents container">
                   <h2>Slide 02 title</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                   <a href="#"></a>
               </div>
           </li>
           <li class="m_slide3">
-              <div class="contents">
+              <div class="contents container">
                   <h2>Slide 03 title</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                   <a href="#"></a>
               </div>
           </li>
           <li class="m_slide4">
-              <div class="contents">
+              <div class="contents container">
                   <h2>Slide 04 title</h2>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                   <a href="#"></a>
@@ -89,20 +87,22 @@
           </li>
       </ul>
     
-      <a href="#" id="prev" class="controls">prev</a>
-      <a href="#" id="next" class="controls">next</i></a>
-
-      <div class="slide_gagebar">
-        <div class="status">      
-          <span class="current-slide">01</span> &#46; <span class="total-slide">04</span>
+      
+        <a href="#" class="main_slide_btns" id="prev" class="controls">
+          <img src="images/prev_btn.svg" alt="">
+        </a>
+        <a href="#" class="main_slide_btns" id="next" class="controls">
+          <img src="images/next_btn.svg" alt="">
+        </a>
+  
+        <div class="slide_gagebar">
+          <div class="status">      
+            <span class="current-slide">01</span> &#46; <span class="total-slide">04</span>
+          </div>
+          <div class="progresss-bar">
+            <span class="bar" data-rate=""></span>
+          </div>
         </div>
-        <div class="progresss-bar">
-          <span class="bar"></span>
-        </div>
-      </div>
-    
-
-
       
     </div> <!-- //slide_wrap -->
   </section>  <!-- //슬라이드섹션 -->
@@ -122,7 +122,7 @@
       <img src="images/company_img2.png" alt="">
         <div class="content">
           <h2 class="main-tt">지속 가능 경영</h2>
-          <p class="Body">네슬레는 개인과 가족, 지역사회, 그리고 우리가 사는 지구 등 
+          <p>네슬레는 개인과 가족, 지역사회, 그리고 우리가 사는 지구 등 
           세 분야에서 긍정적인 변화를 이끌어 내기 위해 
           노력하고 있습니다.</p>
           <a href="" class="btn_large">자세히 보기</a>
@@ -137,9 +137,9 @@
       <h2>Nestle 소식</h2>
       <div class="news_nav">
         <ul>
-          <li><a href="#">전체</a></li>
-          <li><a href="#">공지사항</a></li>
-          <li><a href="#">뉴스/이벤트</a></li>
+          <li><a href="#" data-filter="">전체</a></li>
+          <li><a href="#" data-filter="notice">공지사항</a></li>
+          <li><a href="#" data-filter="event">뉴스/이벤트</a></li>
         </ul>
       </div>
     </div>
@@ -147,62 +147,62 @@
       <div class="news_list">
         <ul>
           <li class="event">
-            <img src="" alt="">
+            <img src="images/news_article1.png" alt="커피잔 이미지">
             <div>
               <h3>Nestle와 함께하는 커피 시음회</h3>
               <p>네스프레소 버츄오와 함께하는 캡슐 커피 시음회, 다양한 맛을 느껴보세요!</p>
             </div>
           </li>
           <li class="event">
-            <img src="" alt="">
+            <img src="/images/news_article2.png" alt="봄시즌 벚꽃 킷캣">
             <div>
               <h3>핑크빛 봄을 담은 킷캣</h3>
               <p>봄을 맞이하여 다시 찾아온 벚꽃 리미티드 에디션 킷캣!</p>
             </div>
           </li>
           <li class="event">
-            <img src="images/article_img3.png" alt="">
+            <img src="/images/news_article3.png" alt="어린이 그림 공모전">
             <div>
               <h3>제 1회 어린이 그림 공모전</h3>
               <p>5월 어린이날을 맞이하여 개최되는 첫번째 그림 공모전</p>
             </div>
           </li>
           <!--
-          <li class="notice">
-            <img src="" alt="">
-            <div>
-              <h3>Nestle 서포터즈 2기 최종 합격자 발표</h3>
-            </div>
-          </li>
-          <li class="notice">
-            <img src="" alt="">
-            <div>
-              <h3>식품 안전의 날</h3>
-              <p>식품의약품안전처에서 주최하는 행사에서 다양한 이벤트를 확인해보세요.</p>
-            </div>
-          </li>
-          <li class="notice">
-            <img src="" alt="">
-            <div>
-              <h3>개인정보처리방침 개정 안내</h3>
-            </div>
-          </li>
+            <li class="notice">
+              <img src="/images/news_article4.png" alt="식품 안전의 날">
+              <div>
+                <h3>식품 안전의 날</h3>
+                <p>식품의약품안전처에서 주최하는 행사에서 다양한 이벤트를 확인해보세요.</p>
+              </div>
+            </li>
+            <li class="notice">
+              <img src="/images/news_article5.png" alt="개인정보처리방침 개정 안내">
+              <div>
+                <h3>개인정보처리방침 개정 안내</h3>
+              </div>
+            </li>
+            <li class="notice">
+              <img src="/images/news_article6.png" alt="서포터즈 2기 최종 합격자 발표">
+              <div>
+                <h3>Nestle 서포터즈 2기 최종 합격자 발표</h3>
+              </div>
+            </li>
+            <li class="event">
+              <img src="images/news_article1.png" alt="커피잔 이미지">
+              <div>
+                <h3>Nestle와 함께하는 커피 시음회</h3>
+                <p>네스프레소 버츄오와 함께하는 캡슐 커피 시음회, 다양한 맛을 느껴보세요!</p>
+              </div>
+            </li>
           <li class="event">
-            <img src="" alt="">
-            <div>
-              <h3>Nestle와 함께하는 커피 시음회</h3>
-              <p>네스프레소 버츄오와 함께하는 캡슐 커피 시음회, 다양한 맛을 느껴보세요!</p>
-            </div>
-          </li>
-          <li class="event">
-            <img src="" alt="">
+            <img src="/images/news_article2.png" alt="봄시즌 벚꽃 킷캣">
             <div>
               <h3>핑크빛 봄을 담은 킷캣</h3>
               <p>봄을 맞이하여 다시 찾아온 벚꽃 리미티드 에디션 킷캣!</p>
             </div>
           </li>
           <li class="event">
-            <img src="" alt="">
+            <img src="/images/news_article3.png" alt="어린이 그림 공모전">
             <div>
               <h3>제 1회 어린이 그림 공모전</h3>
               <p>5월 어린이날을 맞이하여 개최되는 첫번째 그림 공모전</p>
@@ -217,9 +217,12 @@
       <div class="news_video">
         <h2>Nestle의 다양한 이야기가 궁금하다면?</h2>
         <div>
-          <a href=""><img src="" alt="">Youtube 보러가기</a>
+          <a href=""><img src="/images/news_youtube_image.png" alt="유튜브 로고">Youtube 보러가기</a>
         </div>
-        <video url="https://www.youtube.com/watch?v=8q3agjm8wtA&t=184s"></video>
+        <div class="video">
+          <video src="/video/Korea 네슬레 코코아 플랜과 킷캣.mp4"></video>
+          <button class="play"></button>
+        </div>
       </div>
     </div>
   </section>
@@ -227,7 +230,7 @@
 
    <!-- 제품소개 섹션 시작 ym -->
    <section class="products container">
-    <h2 class="main-tt">Nestle 제품</h2>
+    <h2 class="maintt">Nestle 제품</h2>
     <p>네슬레의 다양한 브랜드를 소개합니다.</p>
     <div class="sliderwrapper">
       <ul class="slidecontainer">
@@ -280,7 +283,7 @@
 
   <!-- 브랜드 섹션 gs -->
   <section class="brands">
-      <h2>Explore selection our brands</h2>
+      <h2 class="main-tt">Explore selection our brands</h2>
     <ul>
       <li><a href="#"><img src="images/brand_logo1.png" alt=""></a></li>
       <li><a href="#"><img src="images/brand_logo2.png" alt=""></a></li>
@@ -296,27 +299,36 @@
 
   <!-- 고객지원 섹션 gs -->
   <section class="support container">
-    <h2>Customer Support</h2>
-    <nav>
+    <h2 class="main-tt">Customer Support</h2>
       <ul>
-        <li><a href="#"><img src="images/section_support_icon1.png" alt=""></a></li>
-        <li><a href="#"><img src="images/section_support_icon2.png" alt=""></a></li>
-        <li><a href="#"><img src="images/section_support_icon3.png" alt=""></a></li>
-        <li><a href="#"><img src="images/section_support_icon4.png" alt=""></a></li>
+        <li>
+          <a href="#"><img src="images/section_support_icon1.png" alt=""></a>
+          <h3 class="section-tt28">고객상담</h3>
+        </li>
+        <li>
+          <a href="#"><img src="images/section_support_icon2.png" alt=""></a>
+          <h3 class="section-tt28">제품상담</h3>
+        </li>
+        <li>
+          <a href="#"><img src="images/section_support_icon3.png" alt=""></a>
+          <h3 class="section-tt28">질문답변</h3>
+        </li>
+        <li>
+          <a href="#"><img src="images/section_support_icon4.png" alt=""></a>
+          <h3 class="section-tt28">매장찾기</h3> 
+        </li>
       </ul>
-    </nav>
   </section>
   <!-- //고객지원 섹션 -->
 
   <!-- 푸터영역 ws -->
   <footer>
-    <div class="container">
+    <div class="footer_all container">
       <div class="footer_title">
-        <h3>Nestle</h3>
-        <p>we unlock the power of
-          food to enhance quality of
-          life for everyoune, today and
-          for generations to come</p>
+        <div class="footer_title2">
+          <h3>Nestle</h3>
+          <p>we unlock the power offood to enhance quality oflife for everyoune, today andfor generations to come</p>
+        </div>
       </div>
       <nav>
         <div class="footer_menu">
@@ -350,19 +362,70 @@
         <div class="sns_list">
           <p>FOLLOW US ON</p>
           <ul class="sns_icon">
-            <li><a href="#"><img src="images/footer_sns_icon1.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/footer_sns_icon2.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/footer_sns_icon3.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/footer_sns_icon4.svg" alt=""></a></li>
-            <li><a href="#"><img src="images/footer_sns_icon5.svg" alt=""></a></li>
+            <li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_123_337)">
+              <path d="M20.728 14.0251H17.8199V12.3751C17.8199 11.5237 17.8892 10.9874 19.1094 10.9874H20.6505V8.3639C19.9006 8.28635 19.1465 8.2484 18.3916 8.25005C16.1534 8.25005 14.5199 9.61708 14.5199 12.1267V14.0251H12.0449V17.3251L14.5199 17.3242V24.7501H17.8199V17.3226L20.3494 17.3218L20.728 14.0251Z" fill="#F9F4F4"/>
+              </g>
+              <rect x="0.5" y="0.5" width="32" height="32" rx="16" stroke="#F9F4F4"/>
+              <defs>
+              <clipPath id="clip0_123_337">
+              <rect width="33" height="33" rx="16.5" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </a></li>
+            <li><a href="#"><svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_123_339)">
+              <path d="M23.0876 13.0029C22.9295 12.4116 22.4634 11.9455 21.8721 11.7874C20.7996 11.5 16.5 11.5 16.5 11.5C16.5 11.5 12.2004 11.5 11.1279 11.7874C10.5366 11.9455 10.0705 12.4116 9.91236 13.0029C9.625 14.0754 9.625 17 9.625 17C9.625 17 9.625 19.9246 9.91236 20.9971C10.0705 21.5884 10.5366 22.0545 11.1279 22.2126C12.2004 22.5 16.5 22.5 16.5 22.5C16.5 22.5 20.7996 22.5 21.8721 22.2126C22.4641 22.0545 22.9295 21.5884 23.0876 20.9971C23.375 19.9246 23.375 17 23.375 17C23.375 17 23.375 14.0754 23.0876 13.0029ZM15.125 19.3815V14.6185L19.25 17L15.125 19.3815Z" fill="#F9F4F4"/>
+              </g>
+              <rect x="0.5" y="1" width="32" height="32" rx="16" stroke="#F9F4F4"/>
+              <defs>
+              <clipPath id="clip0_123_339">
+              <rect y="0.5" width="33" height="33" rx="16.5" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </a></li>
+            <li>
+              <a href="#">
+                <img class="active" src="images/footer_sns_icon3.svg" alt="">
+                <img src="images/footer_sns_hover_icon3.svg" alt="">
+              </a>
+            </li>
+            <li><a href="#"><svg width="33" height="34" viewBox="0 0 33 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_123_338)">
+              <path d="M10.2212 10.8125L14.9437 17.5626L10.1299 23.1875H11.9493L15.7574 18.7255L18.8794 23.1875H22.9426L17.9945 16.1044L22.5116 10.8125H20.7203L17.1848 14.9442L14.2992 10.8125H10.2212Z" fill="#F9F4F4"/>
+              </g>
+              <rect x="0.5" y="1" width="32" height="32" rx="16" stroke="#F9F4F4"/>
+              <defs>
+              <clipPath id="clip0_123_338">
+              <rect y="0.5" width="33" height="33" rx="16.5" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </a></li>
+            <li><a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_123_341)">
+              <path d="M10.5662 21.78V12.7801H13.0623V21.78H10.5662ZM11.8201 11.6199C11.449 11.6199 11.1306 11.4968 10.865 11.2507C10.6033 11.0008 10.4724 10.7019 10.4724 10.3543C10.4724 10.0105 10.6033 9.71561 10.865 9.46949C11.1306 9.21949 11.449 9.09448 11.8201 9.09448C12.1912 9.09448 12.5076 9.21949 12.7693 9.46949C13.0349 9.71561 13.1677 10.0105 13.1677 10.3543C13.1677 10.7019 13.0349 11.0008 12.7693 11.2507C12.5076 11.4968 12.1912 11.6199 11.8201 11.6199ZM17.5578 16.5769V21.78H15.0618V12.7801H17.4407V14.3679H17.5461C17.7453 13.8445 18.0793 13.4305 18.5481 13.1258C19.0168 12.8171 19.5852 12.6629 20.2531 12.6629C20.8782 12.6629 21.4231 12.7996 21.8879 13.073C22.3528 13.3465 22.7141 13.7371 22.9719 14.2449C23.2297 14.7488 23.3586 15.3504 23.3586 16.0496V21.78H20.8625V16.4949C20.8665 15.9441 20.7258 15.5144 20.4407 15.2058C20.1555 14.8933 19.7629 14.7371 19.2629 14.7371C18.927 14.7371 18.6301 14.8094 18.3723 14.9539C18.1184 15.0984 17.9192 15.3093 17.7747 15.5867C17.634 15.8601 17.5618 16.1902 17.5578 16.5769Z" fill="#F9F4F4"/>
+              </g>
+              <rect x="0.5" y="0.5" width="32" height="32" rx="16" stroke="#F9F4F4"/>
+              <defs>
+              <clipPath id="clip0_123_341">
+              <rect width="33" height="33" rx="16.5" fill="white"/>
+              </clipPath>
+              </defs>
+              </svg>
+              </a></li>
           </ul>
         </div>
     </nav>
     </div>
   </footer>
    <!-- //푸터영역 -->
-
-  <a href="#" id="top"><img src="images/footer_top_icon1.svg" alt=""></a>
-  
+  <div class="top_button">
+  <a href="#" id="top"><img class="active" src="images/footer_top_icon1.svg" alt=""></a>
+  <a href="#" id="top1"><img src="images/footer_top_hover.svg" alt=""></a>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
