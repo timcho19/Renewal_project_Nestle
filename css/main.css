@@ -460,7 +460,28 @@ header nav form button{
 }
 .company .info{
 	display: flex;
+  margin-bottom: 96px;
+}
+.company .info img{
+  border-radius: 15px;
+}
+.company .info .content{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 112px 105px;
+}
+.company .info .content .main-tt{
+  margin-bottom: 50px;
+}
+.company .info .content p{
+  margin-bottom: 50px;
+  width:200px;
+  text-align: center;
 }
 .company .info:nth-child(2){
-	margin-top: 96px;
+  flex-direction: row-reverse;
+}
+.company .info .content p:nth-child(2){
+  width:395px;
 }
