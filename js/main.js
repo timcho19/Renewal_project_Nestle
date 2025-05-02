@@ -26,6 +26,9 @@ topBnt.addEventListener('click',(e)=>{
 const m_slides = document.querySelectorAll('.main_slide .mainslide-wrapper ul li');
 const m_slidesCount = m_slides.length;
 const slideWrapper =document.querySelector('.mainslide-wrapper');
+const slideGageBar = document.querySelector('.slide_gagebar');
+const currentCount = document.querySelector('.slide_gagebar .current-slide');
+let statusCount = 1;
 let m_currentIdx = 0;
 
 let autofade;
@@ -37,7 +40,8 @@ function autoFadeSlide(){
         m_slides[m_currentIdx].classList.remove('active');
         m_slides[nextIdx].classList.add('active');
         m_currentIdx = nextIdx;
-        console.log(nextIdx);
+
+        currentCount.innerHTML = '0'+(m_currentIdx+1);
 
     },4000);
 
@@ -53,6 +57,9 @@ slideWrapper.addEventListener('mouserover',()=>{
 slideWrapper.addEventListener('mouserleave',()=>{
     autoFadeSlide();
 });
+
+
+
 
 
 
