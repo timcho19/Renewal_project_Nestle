@@ -85,6 +85,7 @@
 /* section_brans_gs */
 .brands{
   margin-bottom:120px;
+  overflow: hidden;
 }
 .brands h2{
   text-align:center;
@@ -92,7 +93,17 @@
 }
 .brands ul{
   display:flex;
-  justify-content: space-between;
+  gap:124px;
+  position: relative;
+  left:0;
+}
+.brands ul li a{
+  width:168px;
+  height: 168px;
+  display: block;
+}
+.brands ul li img{
+  width: 100%;
 }
 /* /section_brans_gs */
 /* section_support_gs */
