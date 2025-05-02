@@ -22,17 +22,23 @@ let newbrandList = slid.querySelectorAll('li');
 slid.style.width =  slidewidth * newbrandList.length + 'px';
 
 let brandLeft = 0;
-
+let animation;
 function movebrand(){
     brandLeft -= 2
     if(brandLeft < -slidewidth * newbrandList.length/2){
         brandLeft = 0;
     }
     slid.style.left = brandLeft + 'px';
-    requestAnimationFrame(movebrand);
+    animation = requestAnimationFrame(movebrand);
 }
 requestAnimationFrame(movebrand);
 
+slid.addEventListener('mouseenter',()=>{
+    cancelAnimationFrame(animation);
+})
+slid.addEventListener('mouseleave',()=>{
+    requestAnimationFrame(movebrand);
+})
 
 // /brands 무한슬라이드
 
