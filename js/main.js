@@ -148,7 +148,8 @@ slideWrapper.addEventListener('mouseleave',()=>{
 //  /메인슬라이드
 
 
-// /Nestle 소식 article _ ar
+// /Nestle 소식 
+// article _ ar
 const list = document.querySelectorAll('.news_list ul li');
 const buttons = document.querySelectorAll('.news_nav button');
 
@@ -168,5 +169,24 @@ buttons.forEach(button=>{
     })
 });
 
-//Nestle 소식 article _ ar
+//articl _ ar
+
+//video play/pause
+const ytPlay = document.querySelector('#yt-play');
+const ytPause = document.querySelector('#yt-pause');
+//const ytStop = document.querySelector('#yt-stop');
+const ytVideo = document.querySelector('#yt-video');
+
+ytPlay.addEventListener('click',()=>{
+    ytVideo.play();
+})
+ytPause.addEventListener('click',()=>{
+    ytVideo.pause();
+})
+/*
+ytStop.addEventListener('click',()=>{
+    ytVideo.pause();
+    ytVideo.currentTime = 0;
+})
+*/
 
