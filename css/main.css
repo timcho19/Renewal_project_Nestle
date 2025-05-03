@@ -55,6 +55,10 @@
   border-radius: 10px 0 0 10px;
   box-sizing: border-box;
   transition: 0.3s;
+  display: none;
+}
+.content .news_list ul li.active{
+  display: block;
 }
 .content .news_list ul li:hover{
   box-shadow: 
