@@ -490,6 +490,7 @@ header nav form button{
   display: flex;
   gap: 50px;
   width: 1430px;
+  align-items: center;
 }
 .products h2{
   text-align-last: left;
@@ -506,12 +507,16 @@ header nav form button{
  color: var(--medium-gray);
  margin-bottom: 95px;
 }
+.products .sliderwrapper .slidecontainer li {
+  flex: 1;
+  margin: 0 25px;
+}
 .products .sliderwrapper .slidecontainer li img{
   border-radius: 15px;
+  width: 100%;
 }
 .products .sliderwrapper .slidecontainer li.active{
-  flex: 1.4375;
-  height: 420px;
+  flex: 1.4;
 }
 /*
 .products .sliderwrapper-wrap button{
