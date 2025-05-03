@@ -77,14 +77,13 @@ let m_currentIdx = 0;
 
 let autoFade;
 const slideDuration = 4000;
+let progressAnimation;
 
+function startProgressBar() {
+    // 기존 애니메이션이 있다면 취소
+    if (progressAnimation) progressAnimation.cancel();
 
-function autoFadeSlide(){
-    //첫슬라이드 활성화
-    m_slides[m_currentIdx].classList.add('active');
-    currentCount.innerHTML = '0'+(m_currentIdx+1);
-
-    progressBar.animate(
+    progressAnimation = progressBar.animate(
         [
             { width: '0%' },
             { width: '100%' }
@@ -94,8 +93,17 @@ function autoFadeSlide(){
             fill: 'forwards',
             easing: 'linear'
         }
-
     );
+}
+
+
+function autoFadeSlide(){
+    
+    //첫슬라이드 활성화
+    m_slides[m_currentIdx].classList.add('active');
+    currentCount.innerHTML = '0'+(m_currentIdx+1);
+
+    startProgressBar();
 
     //순환
     autoFade = setInterval(function(){
@@ -108,18 +116,7 @@ function autoFadeSlide(){
         
         currentCount.innerHTML = '0'+(m_currentIdx+1);
 
-        progressBar.animate(
-            [
-                { width: '0%' },
-                { width: '100%' }
-            ],
-            {
-                duration: slideDuration,
-                fill: 'forwards',
-                easing: 'linear'
-            }
-    
-        );
+        startProgressBar()
         
 
     },slideDuration);
@@ -132,9 +129,12 @@ autoFadeSlide();
 
 slideWrapper.addEventListener('mouseover',()=>{
  clearInterval(autoFade);
+ if (progressAnimation) progressAnimation.pause();
 });
 
 slideWrapper.addEventListener('mouseleave',()=>{
+    
+    if (progressAnimation) progressAnimation.play();
     autoFadeSlide();
 });
 
