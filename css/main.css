@@ -605,13 +605,17 @@ header nav form button{
 /* //company ym */
 
 /* 제품소개 섹션 시작 ym */
+.products{
+  position: relative;
+}
 .products .sliderwrapper{
   overflow: hidden;
+  max-width: 1160;
 }
 .products .sliderwrapper .slidecontainer{
   display: flex;
   gap: 50px;
-  width: 1430px;
+  width: 1570px;
   align-items: center;
 }
 .products h2{
@@ -629,28 +633,69 @@ header nav form button{
  color: var(--medium-gray);
  margin-bottom: 95px;
 }
+.products a{
+  position: absolute;
+  right: 0;
+  top: 95px;
+}
+
+.products .sliderwrapper-wrap
+{
+  position: relative;
+}
+.products .sliderwrapper-wrap button{
+  position: absolute;
+  top: 232px;
+}
+.products .sliderwrapper-wrap .prev{
+  left: -96px;
+}
+.products .sliderwrapper-wrap .next{
+  right: -96px;
+}
 .products .sliderwrapper .slidecontainer li {
   flex: 1;
-  margin: 0 25px;
+  opacity: 60%;
 }
 .products .sliderwrapper .slidecontainer li img{
   border-radius: 15px;
   width: 100%;
+  margin-bottom: 24px;
 }
 .products .sliderwrapper .slidecontainer li.active{
-  flex: 1.4;
+  flex: 1.4375;
+  opacity: 100%;
 }
-/*
-.products .sliderwrapper-wrap button{
-  position: absolute;
-  top: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+
+.products .sliderwrapper .slidecontainer li.active h3,
+.products .sliderwrapper .slidecontainer li.active h4,
+.products .sliderwrapper .slidecontainer li.active h5,
+.products .sliderwrapper .slidecontainer li.active p 
+{
+  /* transform: scale(1.4); */
+  width: 460px;
+  transform-origin: left center;
+  opacity: 100%;
 }
-.sliderwrapper-wrap .prev{
-  left: -40px;
+.products .sliderwrapper .slidecontainer li.active h3{
+  text-align: left;
+  font: calc(var(--lh) * 2);
+  font-size: calc(var(--fz) * 2.25);
+  font-weight: bold;
 }
-.sliderwrapper-wrap .next{
-  right: -40px;
+.products .sliderwrapper .slidecontainer li.active h4{
+  font: var(--lh);
+  font-size: calc(var(--fz) * 1.25);
+  font-weight: 500;
 }
-*/
+.products .sliderwrapper .slidecontainer li.active h5{
+  font: 400 var(--lh);
+  font-size: var(--fz);
+  color: var(--black);
+}
+.products .sliderwrapper .slidecontainer li.active p{
+  font: var(--lh);
+  font-size:calc(var(--fz) * 0.75);
+  font-weight: 400;
+}
+/* //제품소개 섹션 ym */
