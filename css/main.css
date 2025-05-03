@@ -105,12 +105,17 @@
   align-items: center;
   gap: 10px;
 }
+.content .news_video svg path:hover{
+  stroke: var(--primary);
+} /*path 두개가 따로 호버 된다..*/
+
 .content .video{
   position: relative;
 }
 .content .video video{
   width: 565px;
   height: 309px;
+  object-fit: cover;
 }
 .content .video button{
   position: absolute;
