@@ -80,6 +80,24 @@ const slideDuration = 4000;
 
 
 function autoFadeSlide(){
+    //첫슬라이드 활성화
+    m_slides[m_currentIdx].classList.add('active');
+    currentCount.innerHTML = '0'+(m_currentIdx+1);
+
+    progressBar.animate(
+        [
+            { width: '0%' },
+            { width: '100%' }
+        ],
+        {
+            duration: slideDuration,
+            fill: 'forwards',
+            easing: 'linear'
+        }
+
+    );
+
+    //순환
     autoFade = setInterval(function(){
         let nextIdx = (m_currentIdx + 1) % m_slidesCount;
 
@@ -89,6 +107,19 @@ function autoFadeSlide(){
 
         
         currentCount.innerHTML = '0'+(m_currentIdx+1);
+
+        progressBar.animate(
+            [
+                { width: '0%' },
+                { width: '100%' }
+            ],
+            {
+                duration: slideDuration,
+                fill: 'forwards',
+                easing: 'linear'
+            }
+    
+        );
         
 
     },slideDuration);
