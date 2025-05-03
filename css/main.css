@@ -538,9 +538,10 @@ header nav form button{
   position: relative;
 }
 .slide_gagebar .progresss-bar .bar{
-  
+  width: 0;
   height: 100%; 
   position: absolute;
+  top:0;
   left: 0;
   background-color: var(--white);
   transition: 4s;
