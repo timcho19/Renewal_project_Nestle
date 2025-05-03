@@ -73,6 +73,8 @@ const slideWrapper =document.querySelector('.mainslide-wrapper');
 const slideGageBar = document.querySelector('.slide_gagebar');
 const currentCount = document.querySelector('.slide_gagebar .current-slide');
 const progressBar = slideGageBar.querySelector('.bar');
+const prevBtn = document.querySelector('#prev');
+const nextBtn = document.querySelector('#next');
 let m_currentIdx = 0;
 
 let autoFade;
@@ -137,6 +139,7 @@ slideWrapper.addEventListener('mouseleave',()=>{
     if (progressAnimation) progressAnimation.play();
     autoFadeSlide();
 });
+
 
 
 
