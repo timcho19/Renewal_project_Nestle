@@ -177,7 +177,6 @@ buttons.forEach(button=>{
 //video play/pause
 const ytPlay = document.querySelector('#yt-play');
 const ytPause = document.querySelector('#yt-pause');
-//const ytStop = document.querySelector('#yt-stop');
 const ytVideo = document.querySelector('#yt-video');
 
 ytPlay.addEventListener('click',()=>{
@@ -185,11 +184,4 @@ ytPlay.addEventListener('click',()=>{
 })
 ytPause.addEventListener('click',()=>{
     ytVideo.pause();
-})
-/*
-ytStop.addEventListener('click',()=>{
-    ytVideo.pause();
-    ytVideo.currentTime = 0;
-})
-*/
-
+});
