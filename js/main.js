@@ -144,7 +144,34 @@ slideWrapper.addEventListener('mouseleave',()=>{
 
 
 
+// 좌우버튼
 
+prevBtn.addEventListener('click', () => {
+    clearInterval(autoFade); // 자동 슬라이드 중지
+    if (progressAnimation) progressAnimation.cancel(); // 진행바 애니메이션 중지
+
+    m_slides[m_currentIdx].classList.remove('active');
+    m_currentIdx = (m_currentIdx - 1 + m_slidesCount) % m_slidesCount;
+    m_slides[m_currentIdx].classList.add('active');
+    currentCount.innerHTML = '0' + (m_currentIdx + 1);
+    startProgressBar();
+
+
+    autoFadeSlide();
+});
+
+nextBtn.addEventListener('click', () => {
+    clearInterval(autoFade);
+    if (progressAnimation) progressAnimation.cancel();
+
+    m_slides[m_currentIdx].classList.remove('active');
+    m_currentIdx = (m_currentIdx + 1) % m_slidesCount;
+    m_slides[m_currentIdx].classList.add('active');
+    currentCount.innerHTML = '0' + (m_currentIdx + 1);
+    startProgressBar();
+
+    autoFadeSlide();
+});
 
 
 
