@@ -179,9 +179,16 @@ const ytPlay = document.querySelector('#yt-play');
 const ytPause = document.querySelector('#yt-pause');
 const ytVideo = document.querySelector('#yt-video');
 
+
 ytPlay.addEventListener('click',()=>{
     ytVideo.play();
-})
-ytPause.addEventListener('click',()=>{
+    ytPlay.classList.remove('active');
+});
+ytVideo.addEventListener('click',()=>{
     ytVideo.pause();
+    ytPause.classList.add('active');
+});
+ytPause.addEventListener('click',()=>{
+    ytVideo.play();
+    ytPause.classList.remove('active');
 });
