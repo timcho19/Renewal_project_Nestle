@@ -110,13 +110,39 @@
 
 .content .video{
   position: relative;
+  display: inline-block;
 }
 .content .video video{
   width: 565px;
   height: 309px;
   object-fit: cover;
 }
-.content .video button #yt-play{
+.content .video #yt-play{
+  position: absolute;
+  z-index: 2;
+  width: 54px;
+  height: 54px;
+  background-color: rgba(255,255,255,0.8);
+  clip-path: polygon(35% 25%, 35% 75%, 75% 50%);
+  box-shadow: 3 3 4px rgba(0, 0, 0, 0.8);
+  top: calc(50% - 27px);
+  left: calc(50% - 27px);
+}
+.content .video #yt-pause{
+  position: absolute;
+  z-index: 2;
+  font-family: 'Material Icons';
+  font-size: 45px;
+  color: rgba(255,255,255,0.8);
+  box-shadow: 3 3 4px rgba(0, 0, 0, 0.8);;
+  /*left:calc(50% - 22.5px);
+  top:calc(50% - 22.5px);*/
+}
+
+
+
+/*
+.content .video button{
   position: absolute;
   width: 54px;
   height: 54px;
