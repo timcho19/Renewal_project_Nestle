@@ -639,6 +639,9 @@ header nav form button{
 
 /* 제품소개 섹션 시작 ym */
 
+.products{
+  margin-bottom: 112px;
+}
 .products .sliderwrapper{
   overflow: hidden;
   max-width: 1200px;
