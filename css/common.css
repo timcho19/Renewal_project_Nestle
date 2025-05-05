@@ -89,6 +89,7 @@ body{
   color: var(--black);
   font-weight: 400;
   display: inline-block;
+  transition: 0.3s;
 }
 .btn_large{
   border-radius:30px;
@@ -109,12 +110,13 @@ body{
   padding: 0 32px;
   font-size: var(--fz);
 }
-.btn_large:hover, .btn_medium:hover, .btn_small:hover{
+.btn_small:hover{
   border: 1px solid var(--primary);
   background: #fff;
   color: var(--primary);  
 }
-.btn_large:active, .btn_medium:active, .btn_small:active{
+.btn_large:active, .btn_medium:active, .btn_small:active,
+.btn_large:hover, .btn_medium:hover{
   border: 1px solid var(--primary);
   background: var(--primary);
   color: var(--white);  

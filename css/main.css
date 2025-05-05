@@ -636,18 +636,27 @@ header nav form button{
 /* //company ym */
 
 /* 제품소개 섹션 시작 ym */
-.products{
-  position: relative;
-}
+
+/* 제품소개 섹션 시작 ym */
+
 .products .sliderwrapper{
   overflow: hidden;
-  max-width: 1160;
+  max-width: 1200px;
+  position: relative;
 }
 .products .sliderwrapper .slidecontainer{
+  position: relative;
   display: flex;
   gap: 50px;
-  width: 1570px;
+  width: 4710px;
+  height: 677px;
   align-items: center;
+  transition: left 0.3s;
+  margin-top: 71px;
+}
+
+.products .sliderwrapper li{
+  transition: 0.3s 0.1s;
 }
 .products h2{
   text-align-last: left;
@@ -661,18 +670,18 @@ header nav form button{
 }
 .products p{
  text-align: left;
- color: var(--medium-gray);
- margin-bottom: 95px;
-}
-.products a{
-  position: absolute;
-  right: 0;
-  top: 95px;
+ color: var(--medium-gray); 
+
 }
 
 .products .sliderwrapper-wrap
 {
   position: relative;
+}
+.products .sliderwrapper-wrap a{
+  position: absolute;
+  right: 0;
+  top: 24px;
 }
 .products .sliderwrapper-wrap button{
   position: absolute;
@@ -729,4 +738,5 @@ header nav form button{
   font-size:calc(var(--fz) * 0.75);
   font-weight: 400;
 }
+/* //제품소개 섹션 ym */
 /* //제품소개 섹션 ym */
