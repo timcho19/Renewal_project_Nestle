@@ -10,7 +10,7 @@ const slidewidth = 292;
 for(let slide of brandSlids){
     slide.style.width = brandTotalWidth + 'px';
 }
-    */
+ */
 let slideHTML = slid.innerHTML;
 console.log(slideHTML);
 let clonedSlide = slideHTML.replace(/li/g,'li class="clon"');
@@ -192,4 +192,85 @@ ytStop.addEventListener('click',()=>{
     ytVideo.currentTime = 0;
 })
 */
+
+
+//제품소개 ym
+
+// slide
+const slideContainer = document.querySelector('.slidecontainer');
+const slides = document.querySelectorAll('.slidecontainer li');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const slideWidth = 320;
+const activeWidth = 460;
+const slideGap = 50;
+const visibleCount = 3;
+
+// 초기 인덱스 설정 (복제 슬라이드 이후 중앙 슬라이드)
+let currentIdx = slides.length;
+
+// 복제 슬라이드 생성
+for(let i=0; i<slides.length; i++){
+  let cloneSlide = slides[i].cloneNode(true);
+  cloneSlide.classList.add('clone');
+  slideContainer.append(cloneSlide);
+ }
+for(let i=slides.length-1; i>=0; i--){
+ let cloneSlide = slides[i].cloneNode(true);
+ cloneSlide.classList.add('clone');
+ slideContainer.prepend(cloneSlide);
+ }
+
+// 모든 슬라이드 다시 선택
+const allSlides = document.querySelectorAll('.slidecontainer li');
+
+// 슬라이더 전체 너비 설정
+slideContainer.style.width = allSlides.length * (slideWidth + slideGap) + 'px';
+
+// 슬라이드 이동 함수
+function moveSlide(idx) {
+  const offset = (slideWidth + slideGap) * idx;
+  slideContainer.style.transition = 'transform 0.5s ease';
+  slideContainer.style.transform = `translateX(-${offset}px)`;
+
+  // active 클래스 관리
+  allSlides.forEach(slide => slide.classList.remove('active'));
+  const centerSlide = allSlides[idx + 1];
+  if (centerSlide) centerSlide.classList.add('active');
+
+  currentIdx = idx;
+}
+
+moveSlide(currentIdx);
+
+// 버튼 클릭 시
+next.addEventListener('click', () => {
+  currentIdx++;
+  if (currentIdx >= allSlides.length - visibleCount) {
+    slideContainer.style.transition = 'none';
+    currentIdx = slides.length;
+    slideContainer.style.transform = `translateX(-${currentIdx * (slideWidth + slideGap)}px)`;
+    setTimeout(() => {
+      moveSlide(currentIdx + 1);
+    }, 20);
+  } else {
+    moveSlide(currentIdx);
+  }
+});
+prev.addEventListener('click', () => {
+  currentIdx--;
+  if (currentIdx <= 0) {
+    slideContainer.style.transition = 'none';
+    currentIdx = slides.length;
+    slideContainer.style.transform = `translateX(-${currentIdx * (slideWidth + slideGap)}px)`;
+    setTimeout(() => {
+      moveSlide(currentIdx - 1);
+    }, 20);
+  } else {
+    moveSlide(currentIdx);
+  }
+});
+
+
+
 
