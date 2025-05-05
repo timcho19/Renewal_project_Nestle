@@ -174,21 +174,27 @@ buttons.forEach(button=>{
 
 //articl _ ar
 
-//video play/pause
-const ytPlay = document.querySelector('#yt-play');
-const ytPause = document.querySelector('#yt-pause');
+//video play/pause _ ar
 const ytVideo = document.querySelector('#yt-video');
+const ytControlBtn = document.querySelector('.video button');
 
 
-ytPlay.addEventListener('click',()=>{
-    ytVideo.play();
-    ytPlay.classList.remove('active');
+ytControlBtn.addEventListener('click', ()=>{
+    ytControlBtn.classList.toggle('active');
+    if(ytControlBtn.classList.contains('active')){
+        ytVideo.play();
+    }else{
+        ytVideo.pause();
+    }
 });
+
 ytVideo.addEventListener('click',()=>{
-    ytVideo.pause();
-    ytPause.classList.add('active');
-});
-ytPause.addEventListener('click',()=>{
-    ytVideo.play();
-    ytPause.classList.remove('active');
+    ytVideo.classList.toggle('active');
+    ytControlBtn.classList.toggle('active');
+
+    if(ytVideo.classList.contains('active')){
+        ytVideo.play();
+    }else{
+        vtVideo.pause();
+    }
 });
