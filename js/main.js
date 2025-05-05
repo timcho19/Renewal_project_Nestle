@@ -238,10 +238,9 @@ const activeWidth = 460;
 const slideGap = 50;
 const visibleCount = 3;
 
-// 초기 인덱스 설정 (복제 슬라이드 이후 중앙 슬라이드)
 let currentIdx = slides.length;
 
-// 복제 슬라이드 생성
+// 슬라이드 복사본 생성
 for(let i=0; i<slides.length; i++){
   let cloneSlide = slides[i].cloneNode(true);
   cloneSlide.classList.add('clone');
@@ -253,10 +252,8 @@ for(let i=slides.length-1; i>=0; i--){
  slideContainer.prepend(cloneSlide);
  }
 
-// 모든 슬라이드 다시 선택
 const allSlides = document.querySelectorAll('.slidecontainer li');
 
-// 슬라이더 전체 너비 설정
 slideContainer.style.width = allSlides.length * (slideWidth + slideGap) + 'px';
 
 // 슬라이드 이동 함수
@@ -264,8 +261,7 @@ function moveSlide(idx) {
   const offset = (slideWidth + slideGap) * idx;
   slideContainer.style.transition = 'transform 0.5s ease';
   slideContainer.style.transform = `translateX(-${offset}px)`;
-
-  // active 클래스 관리
+  // active 
   allSlides.forEach(slide => slide.classList.remove('active'));
   const centerSlide = allSlides[idx + 1];
   if (centerSlide) centerSlide.classList.add('active');
@@ -275,7 +271,7 @@ function moveSlide(idx) {
 
 moveSlide(currentIdx);
 
-// 버튼 클릭 시
+// 버튼 클릭
 next.addEventListener('click', () => {
   currentIdx++;
   if (currentIdx >= allSlides.length - visibleCount) {
