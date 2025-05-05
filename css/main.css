@@ -26,7 +26,8 @@
   font-size: 14px;
   transition: 0.3s;
 }
-.news_bigtitle .news_nav button:hover{
+.news_bigtitle .news_nav button:hover,
+.news_bigtitle .news_nav button.active{
   border: 1px solid var(--primary);
   color: var(--primary);
   font-weight: bold;

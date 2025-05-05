@@ -183,11 +183,16 @@ nextBtn.addEventListener('click', () => {
 const list = document.querySelectorAll('.news_list ul li');
 const buttons = document.querySelectorAll('.news_nav button');
 
-buttons.forEach(button=>{
+buttons.forEach((button, idx) => {
     button.addEventListener('click',()=>{
         for(let l of list){
             l.classList.remove('active');
         }
+        list[idx].classList.add('active');
+        for(let b of buttons){
+            b.classList.remove('active');
+        }
+        buttons[idx].classList.add('active');
         let targetClass = button.getAttribute('data-filter');
         let target = document.querySelectorAll(targetClass);
         if(targetClass === 'all'){
