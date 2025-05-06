@@ -660,7 +660,10 @@ header nav form button{
   display: flex;
   gap: 50px;
   width: 1570px;
+  height: 651px;
   align-items: center;
+  margin: 95px 0 120px;
+  transition: 0.5s;
 }
 .products h2{
   text-align-last: left;
@@ -675,7 +678,7 @@ header nav form button{
 .products p{
  text-align: left;
  color: var(--medium-gray);
- margin-bottom: 95px;
+ 
 
 }
 .products .sliderwrapper-wrap a{
