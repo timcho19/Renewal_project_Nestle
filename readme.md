@@ -24,7 +24,7 @@ HTML, CSS, JavaScript의 기본 웹 기술을 활용하여 외부 라이브러�
 + product_section 파트 : 박연미
 + brand_section 파트 : 박경선
 + support_section 파트 : 박경선
-+ footer 파트 : 장원석 및 공동작업
++ footer 파트 : 박경선
 
 ## 상세 일정
 + 4월 30일 파트별 html제작
