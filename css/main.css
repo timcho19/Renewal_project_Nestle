@@ -694,10 +694,20 @@ header nav form button{
 }
 .products .sliderwrapper-wrap .prev{
   left: -96px;
+  transition: 0.3s;
 }
 .products .sliderwrapper-wrap .next{
   right: -96px;
+  transition: 0.3s;
 }
+
+.products .sliderwrapper-wrap .prev :hover{
+  content: url(/images/prev_hover_btn.svg);
+}
+.products .sliderwrapper-wrap .next :hover{
+  content: url(/images/next_hover_btn.svg);
+}
+
 .products .sliderwrapper .slidecontainer li {
   flex: 1;
   opacity: 60%;
