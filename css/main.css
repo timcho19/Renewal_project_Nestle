@@ -621,7 +621,8 @@ header nav form button{
 }
 .company .info{
 	display: flex;
-  margin-bottom: 96px;
+  margin-bottom: 96px; 
+  
 }
 .company .info img{
   border-radius: 15px;
@@ -637,7 +638,6 @@ header nav form button{
 }
 .company .info .content p{
   margin-bottom: 50px;
-  width:200px;
   text-align: center;
 }
 .company .info:nth-child(2){
@@ -676,11 +676,12 @@ header nav form button{
  text-align: left;
  color: var(--medium-gray);
  margin-bottom: 95px;
+
 }
-.products a{
+.products .sliderwrapper-wrap a{
   position: absolute;
   right: 0;
-  top: 95px;
+  top: -72px;
 }
 
 .products .sliderwrapper-wrap
