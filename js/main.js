@@ -47,11 +47,21 @@ slid.addEventListener('mouseleave',()=>{
 
 window.addEventListener('scroll',()=>{
     let scrollAmt = window.scrollY;
-        if(scrollAmt > brandsOffsetTop){
+        if(scrollAmt > brandsOffsetTop - 300){
             topBnt.classList.add('btn');
         }else{
             topBnt.classList.remove('btn');
         };
+
+        console.log(brandsOffsetTop);
+        console.log(scrollAmt);
+
+    const header = document.querySelector('header');
+    if(scrollAmt > 50){ // 50px 이상 스크롤 시
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
     })
     
 topBnt.addEventListener('click',(e)=>{
@@ -174,18 +184,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 
-
-// 헤더
-window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
-    if(window.scrollY > 50){ // 50px 이상 스크롤 시
-      header.classList.add('shrink');
-    } else {
-      header.classList.remove('shrink');
-    }
-  });
-
-// //헤더
 
 
 //  /메인슬라이드
