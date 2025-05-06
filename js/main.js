@@ -175,6 +175,19 @@ nextBtn.addEventListener('click', () => {
 
 
 
+// 헤더
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('header');
+    if(window.scrollY > 50){ // 50px 이상 스크롤 시
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+  });
+
+// //헤더
+
+
 //  /메인슬라이드
 
 
