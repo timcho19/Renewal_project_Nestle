@@ -264,7 +264,7 @@ slideContainer.style.width = allSlides.length * (slideWidth + slideGap) + active
 // 슬라이드 이동 함수
 function moveSlide(idx) {
   const offset = (slideWidth + slideGap) * idx;
-  slideContainer.style.transition = 'transform 0.6s ease';
+  slideContainer.style.transition = 'transform 0.5s ease';
   slideContainer.style.transform = `translateX(-${offset}px)`;
   // active 
   allSlides.forEach(slide => slide.classList.remove('active'));
