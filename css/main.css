@@ -631,7 +631,8 @@ header nav form button{
 }
 .company .info{
 	display: flex;
-  margin-bottom: 96px;
+  margin-bottom: 96px; 
+  
 }
 .company .info img{
   border-radius: 15px;
@@ -647,7 +648,6 @@ header nav form button{
 }
 .company .info .content p{
   margin-bottom: 50px;
-  width:200px;
   text-align: center;
 }
 .company .info:nth-child(2){
@@ -670,7 +670,10 @@ header nav form button{
   display: flex;
   gap: 50px;
   width: 1570px;
+  height: 651px;
   align-items: center;
+  margin: 95px 0 120px;
+  transition: 0.5s;
 }
 .products h2{
   text-align-last: left;
@@ -685,12 +688,13 @@ header nav form button{
 .products p{
  text-align: left;
  color: var(--medium-gray);
- margin-bottom: 95px;
+ 
+
 }
-.products a{
+.products .sliderwrapper-wrap a{
   position: absolute;
   right: 0;
-  top: 95px;
+  top: -72px;
 }
 
 .products .sliderwrapper-wrap
@@ -703,10 +707,20 @@ header nav form button{
 }
 .products .sliderwrapper-wrap .prev{
   left: -96px;
+  transition: 0.3s;
 }
 .products .sliderwrapper-wrap .next{
   right: -96px;
+  transition: 0.3s;
 }
+
+.products .sliderwrapper-wrap .prev :hover{
+  content: url(/images/prev_hover_btn.svg);
+}
+.products .sliderwrapper-wrap .next :hover{
+  content: url(/images/next_hover_btn.svg);
+}
+
 .products .sliderwrapper .slidecontainer li {
   flex: 1;
   opacity: 60%;

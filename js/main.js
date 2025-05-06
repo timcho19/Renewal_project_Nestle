@@ -252,13 +252,13 @@ const slides = document.querySelectorAll('.slidecontainer li');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const slideWidth = 320;
-const activeWidth = 460;
+const activeWidth = 140;
 const slideGap = 50;
 const visibleCount = 3;
 
 let currentIdx = slides.length;
 
-// 슬라이드 복사본 생성
+// 슬라이드 복사본
 for(let i=0; i<slides.length; i++){
   let cloneSlide = slides[i].cloneNode(true);
   cloneSlide.classList.add('clone');
@@ -272,7 +272,7 @@ for(let i=slides.length-1; i>=0; i--){
 
 const allSlides = document.querySelectorAll('.slidecontainer li');
 
-slideContainer.style.width = allSlides.length * (slideWidth + slideGap) + 'px';
+slideContainer.style.width = allSlides.length * (slideWidth + slideGap) + activeWidth - slideGap + 'px';
 
 // 슬라이드 이동 함수
 function moveSlide(idx) {
