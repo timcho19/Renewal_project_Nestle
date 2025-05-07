@@ -710,10 +710,10 @@ header nav form button{
 }
 
 .products .sliderwrapper-wrap .prev :hover{
-  content: url(/images/prev_hover_btn.svg);
+  content: url(../images/prev_hover_btn.svg);
 }
 .products .sliderwrapper-wrap .next :hover{
-  content: url(/images/next_hover_btn.svg);
+  content: url(../images/next_hover_btn.svg);
 }
 
 .products .sliderwrapper .slidecontainer li {
