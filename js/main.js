@@ -12,9 +12,9 @@ for(let slide of brandSlids){
 }
  */
 let slideHTML = slid.innerHTML;
-console.log(slideHTML);
+
 let clonedSlide = slideHTML.replace(/li/g,'li class="clon"');
-console.log(clonedSlide);
+
 
 slid.innerHTML = clonedSlide + slideHTML;
 
@@ -53,8 +53,7 @@ window.addEventListener('scroll',()=>{
             topBnt.classList.remove('btn');
         };
 
-        console.log(brandsOffsetTop);
-        console.log(scrollAmt);
+       
 
     const header = document.querySelector('header');
     if(scrollAmt > 50){ // 50px 이상 스크롤 시
@@ -387,7 +386,7 @@ function deleteCookie(name){
   document.cookie = myCookie;  
 }
 
-console.log(onDayCheck.checked);
+
 
 // 닫기 버튼을 클릭하면 할일
 // ondDaycheck 값이 true와 같다면   -- 쿠키 생성
