@@ -807,6 +807,10 @@ header nav form button{
   font-weight: 700;
 }
 
+#popup strong{
+  font-weight: 700;
+}
+
 #popup button{
   font-size: 20px;
   cursor: pointer;
@@ -820,6 +824,10 @@ header nav form button{
 
 #popup.active{
   display: block;
+}
+#popup h4{
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 #popup div{
