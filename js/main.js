@@ -156,7 +156,8 @@ slideWrapper.addEventListener('mouseleave',()=>{
 
 // 좌우버튼
 
-prevBtn.addEventListener('click', () => {
+prevBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     clearInterval(autoFade); // 자동 슬라이드 중지
     if (progressAnimation) progressAnimation.cancel(); // 진행바 애니메이션 중지
 
@@ -170,7 +171,8 @@ prevBtn.addEventListener('click', () => {
     autoFadeSlide();
 });
 
-nextBtn.addEventListener('click', () => {
+nextBtn.addEventListener('click', (e) => {
+    e.preventDefault();
     clearInterval(autoFade);
     if (progressAnimation) progressAnimation.cancel();
 
