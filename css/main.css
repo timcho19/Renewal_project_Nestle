@@ -571,11 +571,11 @@ header nav form button{
 }
 
 
-.mainslide-wrapper .prev{
+.mainslide-wrapper #prev{
   left: 50%;
   margin-left: -750px;
 }
-.mainslide-wrapper .next{
+.mainslide-wrapper #next{
   right: 50%;
   margin-right: -750px;
 }
