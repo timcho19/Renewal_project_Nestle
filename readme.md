@@ -1,8 +1,8 @@
 # Nestlé 홈페이지 리뉴얼 프로젝트
 
 ## 🔗 빠른 링크
-- 📑 기획서(피그마 슬라이드): https://www.figma.com/file/XXXX  
-- 🎨 디자인 시안(피그마): https://www.figma.com/file/YYYY  
+- 📑 기획서(피그마 슬라이드): https://www.figma.com/slides/w2F4dHtW2v49EIQjht4CZz/%EB%B6%88%ED%83%9C%EC%9A%B0%EC%A1%B0_1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_ppt?node-id=45-7&t=s2V9KC2eaol5uiNv-1 
+- 🎨 디자인 시안(피그마): https://www.figma.com/design/mNXabWwo6hMDaMMnCI31Xf/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EB%84%A4%EC%8A%AC%EB%A0%88%EB%94%94%EC%9E%90%EC%9D%B8?node-id=118-4&t=INpKFc1KKtJtadsd-1
 - 🌐 배포 URL: https://timcho19.github.io/Renewal_project_Nestle/
 
 ---
@@ -12,7 +12,6 @@
 ### 1.1 목표
 - **브랜드 가치 강화**: 네슬레의 역사와 제품을 직관적으로 전달
 - **UX/UI 개선**: 접근성과 가독성을 높이고, 사용자 흐름이 매끄럽도록 설계
-- **반응형 구현**: 모바일·태블릿·PC 화면 크기에 맞춘 최적화
 - **정적 웹 페이지 개발**: HTML, CSS, JavaScript만으로 구현하여 가볍고 빠른 로딩 속도 제공
 
 ### 1.2 👥 팀원
@@ -63,22 +62,17 @@
 ```
 Renewal_project_Nestle/
 ├─ index.html              # 메인 페이지
-├─ products.html           # 제품 페이지
-├─ brand.html              # 브랜드 소개
-├─ esg.html                # ESG 활동
-├─ news.html               # 뉴스·이벤트
-├─ support.html            # 고객지원
 ├─ css/
-│  ├─ reset.css
-│  ├─ style.css
-│  └─ responsive.css
+│  ├─ common.css
+│  ├─ main.css
+│  └─ reset.css
 ├─ js/
-│  ├─ main.js
-│  └─ slider.js
+│  └─ main.js
 ├─ images/
 │  ├─ logo.png
-│  ├─ hero/
-│  ├─ products/
+│  └─ ...
+├─ video/
+│  ├─ koreanestlekitkat.mp4
 │  └─ ...
 └─ README.md
 ```
@@ -109,7 +103,7 @@ cd Renewal_project_Nestle
 ---
 
 ## 7. 기획/디자인 문서
-- **기획서(피그마 슬라이드)**: https://www.figma.com/file/XXXX  
-- **디자인 시안(피그마)**: https://www.figma.com/file/YYYY  
+- **기획서(피그마 슬라이드)**: https://www.figma.com/slides/w2F4dHtW2v49EIQjht4CZz/%EB%B6%88%ED%83%9C%EC%9A%B0%EC%A1%B0_1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_ppt?node-id=45-7&t=s2V9KC2eaol5uiNv-1 
+- **디자인 시안(피그마)**: https://www.figma.com/design/mNXabWwo6hMDaMMnCI31Xf/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EB%84%A4%EC%8A%AC%EB%A0%88%EB%94%94%EC%9E%90%EC%9D%B8?node-id=118-4&t=INpKFc1KKtJtadsd-1
 
 [![미리보기](./images/preview.png)](https://www.figma.com/file/XXXX "피그마 슬라이드")
