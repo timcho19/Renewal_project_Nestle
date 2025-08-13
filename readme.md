@@ -17,9 +17,10 @@
 ### 1.2 👥 팀원
 | 이름 | 역할 | 주요 담당 | GitHub | 연락 |
 | --- | --- | --- | --- | --- |
-| 팀원A | 팀장 · 기획/퍼블리싱 | 프로젝트 기획, 메인 페이지 제작 | [@githubA](https://github.com/githubA) | email@example.com |
-| 팀원B | 퍼블리싱 | 서브 페이지(제품/브랜드/ESG) 제작 | [@githubB](https://github.com/githubB) | email@example.com |
-| 팀원C | 디자인 | 디자인 시안 제작, 반응형 레이아웃 설계 | [@githubC](https://github.com/githubC) | email@example.com |
+| 장원석 | 팀장 · 공통 | 프로젝트 기획, 메인 페이지 제작 | [@timcho19](https://github.com/timcho19) | timcho4589@gmail.com |
+| 박경선 | 공통 | 서브 페이지(제품/브랜드/ESG) 제작 | [@githubB](https://github.com/githubB) | email@example.com |
+| 조아랑 | 공통 | 디자인 시안 제작, 반응형 레이아웃 설계 | [@githubC](https://github.com/githubC) | email@example.com |
+| 박연미 | 공통 | 디자인 시안 제작, 반응형 레이아웃 설계 | [@githubC](https://github.com/githubC) | email@example.com |
 
 ---
 
@@ -106,4 +107,6 @@ cd Renewal_project_Nestle
 - **기획서(피그마 슬라이드)**: https://www.figma.com/slides/w2F4dHtW2v49EIQjht4CZz/%EB%B6%88%ED%83%9C%EC%9A%B0%EC%A1%B0_1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_ppt?node-id=45-7&t=s2V9KC2eaol5uiNv-1 
 - **디자인 시안(피그마)**: https://www.figma.com/design/mNXabWwo6hMDaMMnCI31Xf/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EB%84%A4%EC%8A%AC%EB%A0%88%EB%94%94%EC%9E%90%EC%9D%B8?node-id=118-4&t=INpKFc1KKtJtadsd-1
 
-[![미리보기](./images/preview.png)](https://www.figma.com/file/XXXX "피그마 슬라이드")
+[![미리보기](./images/thumbnail1.jpg)](https://www.figma.com/file/XXXX "피그마 슬라이드")
+[![미리보기](./images/thumbnail2.jpg)](https://www.figma.com/file/XXXX "피그마 슬라이드")
+[![미리보기](./images/thumbnail3.jpg)](https://www.figma.com/file/XXXX "피그마 슬라이드")
