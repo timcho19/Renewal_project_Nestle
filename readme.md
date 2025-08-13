@@ -111,3 +111,35 @@ cd Renewal_project_Nestle
 ### 7.1 미리보기
 [![미리보기](./images/thumbnail.jpg)](https://www.figma.com/slides/w2F4dHtW2v49EIQjht4CZz/%EB%B6%88%ED%83%9C%EC%9A%B0%EC%A1%B0_1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_ppt?node-id=45-7&t=s2V9KC2eaol5uiNv-1 "피그마 슬라이드")
 
+---
+## 8. 🗓️마일스톤
+
+```mermaid
+gantt
+    title 네슬레 간트 차트
+    dateFormat  YYYY-MM-DD
+    excludes    weekends
+
+
+    section 기획/설계
+    자료조사·방향설정           :a1, 2025-04-07, 4d
+    스케치/스토리보드           :a2, after a1, 5d
+    발표자료                   :a3, after a2, 1d
+    스타일 가이드              :a4, after a3, 3d
+    Figma 와이어·디자인        :a5, after a4, 7d
+
+
+    section 구현(핵심)
+    컨벤션 구축 / 파트 분배     :b1, 2025-04-28, 2d
+    파트별 코딩           :b2, after b1, 7d
+
+
+    section 품질
+    SEO/OG·성능·접근성         :c1, 2025-05-04, 2d
+    테스트(E2E)·에러관측       :c2, after c1, 2d
+
+    section 릴리스
+    문서화·시연자료 :d1, 2025-05-07, 1d
+```
+
+---
