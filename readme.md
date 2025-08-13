@@ -26,13 +26,18 @@
 
 ## 2. 개발 환경
 
-### 2.1 기술 스택
+### 2.1 개발 스택
 - **HTML5**: 시멘틱 태그를 사용한 구조화
 - **CSS3**: Flexbox, 애니메이션 효과
 - **JavaScript(ES6+)**: DOM 조작, 인터랙션, 슬라이드/탭 UI
 - **Design Tool**: Figma
 - **Version Control**: Git & GitHub
 - **Deployment**: GitHub Pages
+
+### 2.1 개발 스택
+- [HTML 컨벤션](docs/html.md)  
+- [CSS 컨벤션](docs/css.md)  
+- [JavaScript 컨벤션](docs/javascript.md)  
 
 ---
 
