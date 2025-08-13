@@ -28,7 +28,7 @@
 
 ### 2.1 기술 스택
 - **HTML5**: 시멘틱 태그를 사용한 구조화
-- **CSS3**: Flexbox, Grid, 반응형 미디어쿼리, 애니메이션 효과
+- **CSS3**: Flexbox, 애니메이션 효과
 - **JavaScript(ES6+)**: DOM 조작, 인터랙션, 슬라이드/탭 UI
 - **Design Tool**: Figma
 - **Version Control**: Git & GitHub
@@ -43,16 +43,10 @@
   - 제품·브랜드 소개 섹션
   - ESG & 사회공헌 콘텐츠
   - 뉴스·이벤트 영역
-  - 고객지원 링크
+  - 고객지원
 
-- **서브 페이지**
-  - 제품 카탈로그 + 상세 페이지
-  - 브랜드 히스토리
-  - ESG 활동 소개
-  - 뉴스/이벤트 상세 페이지
 
 - **UI/UX 요소**
-  - 반응형 메뉴 네비게이션
   - 스크롤 애니메이션
   - 이미지 슬라이드(캐러셀)
   - 탭 전환 UI
@@ -100,6 +94,8 @@ cd Renewal_project_Nestle
 - JavaScript 모듈화 및 코드 최적화
 - 접근성(A11y) 개선 (키보드 내비게이션, 명도 대비)
 - 이미지 최적화로 로딩 속도 향상
+- 반응형 구현
+- 서브페이지 구현
 
 ---
 
@@ -108,5 +104,5 @@ cd Renewal_project_Nestle
 - **디자인 시안(피그마)**: https://www.figma.com/design/mNXabWwo6hMDaMMnCI31Xf/1%EC%B0%A8-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_%EB%84%A4%EC%8A%AC%EB%A0%88%EB%94%94%EC%9E%90%EC%9D%B8?node-id=118-4&t=INpKFc1KKtJtadsd-1
 
 ### 7.1 미리보기
-[![미리보기](./images/thumbnail.jpg)](https://www.figma.com/file/XXXX "피그마 슬라이드")
+[![미리보기](./images/thumbnail.jpg)](https://www.figma.com/slides/w2F4dHtW2v49EIQjht4CZz/%EB%B6%88%ED%83%9C%EC%9A%B0%EC%A1%B0_1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8_ppt?node-id=45-7&t=s2V9KC2eaol5uiNv-1 "피그마 슬라이드")
 
